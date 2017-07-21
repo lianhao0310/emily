@@ -18,7 +18,7 @@ Emily使用Checkstyle工具对编码风格进行检测, 不符合规范的代码
 ```bash
 [INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ emily-core ---
 [INFO] Starting audit...
-[ERROR] D:\Source\emily\emily-core\src\main\java\com\palmaplus\emily\aop\AlertIfAspect.java:45: 'if' 结构必须使用大括号 '{}'。 [NeedBraces]
+[ERROR] D:\Source\emily\emily-core\src\main\java\com\alice&emily\emily\aop\AlertIfAspect.java:45: 'if' 结构必须使用大括号 '{}'。 [NeedBraces]
 Audit done.
 ```
 
@@ -100,16 +100,16 @@ Audit done.
 
 ```bash
 mvn archetype:generate
-    -DgroupId=com.palmaplus                         # group
+    -DgroupId=com.alice&emily                         # group
     -DartifactId=test                               # artifact
-    -Dpackage=com.palmaplus.test                    # package
+    -Dpackage=com.alice&emily.test                    # package
     -DarchetypeGroupId=com.alice.emily
     -DarchetypeArtifactId=emily-archetype
     -DarchetypeVersion=2.0-SNAPSHOT
 ```
 
 ```bash
-mvn archetype:generate -DgroupId=com.palmaplus -DartifactId=test -Dpackage=com.palmaplus.test -DarchetypeGroupId=com.alice.emily -DarchetypeArtifactId=emily-archetype -DarchetypeVersion=2.0-SNAPSHOT
+mvn archetype:generate -DgroupId=com.alice&emily -DartifactId=test -Dpackage=com.alice&emily.test -DarchetypeGroupId=com.alice.emily -DarchetypeArtifactId=emily-archetype -DarchetypeVersion=2.0-SNAPSHOT
 ```
 
 * 手动建立
@@ -125,13 +125,13 @@ mvn archetype:generate -DgroupId=com.palmaplus -DartifactId=test -Dpackage=com.p
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.palmaplus.test</groupId>
+    <groupId>com.alice&emily.test</groupId>
     <artifactId>test-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <wrapper.daemon.id>${project.artifactId}</wrapper.daemon.id>
-        <wrapper.main.class>com.palmaplus.test.EmilyApplication</wrapper.main.class>
+        <wrapper.main.class>com.alice&emily.test.EmilyApplication</wrapper.main.class>
     </properties>
 
     <dependencies>
@@ -201,16 +201,16 @@ emily:
     enabled: true        # 是否启用
     server:              # 服务器配置
       ssl: true
-      host: smtp.palmaplus.com
+      host: smtp.alice&emily.com
       username: nagrand@ipalmap.com
       password: ******
     groups:              # 邮件分组
       nagrand:
         from: nagrand@ipalmap.com
-        to: [pin.liu@palmaplus.com,sifan.pan@palmaplus.com,guanyu.yue@palmaplus.com]
+        to: [pin.liu@alice&emily.com,sifan.pan@alice&emily.com,guanyu.yue@alice&emily.com]
       pop:
         from: nagrand@ipalmap.com
-        to: [kai.zhang@palmaplus.com,yang.qiu@palmaplus.com]
+        to: [kai.zhang@alice&emily.com,yang.qiu@alice&emily.com]
 ```
 可使用**com.alice.emily.mail.MailSender**发送邮件
 
@@ -554,7 +554,7 @@ emily:
 │  ├─main
 │  │  ├─java
 │  │  │  └─com
-│  │  │      └─palmaplus
+│  │  │      └─alice&emily
 │  │  │          └─nagrand
 │  │  │              └─grpc
 │  │  │                  └─impl
@@ -783,7 +783,7 @@ keycloak.security-constraints[0].securityCollections[0].patterns[0]=/protected/*
 # keyclaok admin 管理配置
 emily.keycloak.admin.server-url=${keycloak.auth-server-url}
 emily.keycloak.admin.realm=${keycloak.realm}
-emily.keycloak.admin.username=pin.liu@palmaplus.com
+emily.keycloak.admin.username=pin.liu@alice&emily.com
 emily.keycloak.admin.password=*****
 emily.keycloak.admin.client-id=${keycloak.resource}
 ```
@@ -797,7 +797,7 @@ emily.keycloak.admin.client-id=${keycloak.resource}
 ```xml
     <properties>
         <wrapper.daemon.id>${project.artifactId}</wrapper.daemon.id>
-        <wrapper.main.class>com.palmaplus.nagrand.ws.Nagrand</wrapper.main.class>
+        <wrapper.main.class>com.alice&emily.nagrand.ws.Nagrand</wrapper.main.class>
     </properties>
 ```
 
@@ -822,7 +822,7 @@ chkconfig nagrand-ws on
 * pom中添加必要属性
 ```xml
     <properties>
-        <uber.main.class>com.palmaplus.nagrand.console.NagrandConsole</uber.main.class>
+        <uber.main.class>com.alice&emily.nagrand.console.NagrandConsole</uber.main.class>
     </properties>
 ```
 
@@ -834,7 +834,4 @@ nohup java -jar nagrand-console.jar > nc.log &
 ## 6. 项目历史
 
 * emily 1.x
-    基于[CDI](http://weld.cdi-spec.org/)，DeltaSpike构建，目前应用于Nagrand
-
-* emily 2.x
-    基于[SpringBoot](http://projects.spring.io/spring-boot/)构建，采用多项Jboss开源产品
+        基于[SpringBoot](http://projects.spring.io/spring-boot/)构建，采用多项Jboss开源产品
