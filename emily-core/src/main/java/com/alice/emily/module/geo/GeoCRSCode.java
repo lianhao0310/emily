@@ -1,7 +1,7 @@
 package com.alice.emily.module.geo;
 
 /**
- * Created by liupin on 2017/1/4.
+ * Created by lianhao on 2017/1/4.
  */
 public class GeoCRSCode {
 

@@ -14,7 +14,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import java.util.concurrent.Executor;
 
 /**
- * Created by liupin on 2017/2/16.
+ * Created by lianhao on 2017/2/16.
  */
 @Configuration
 @EnableAsync(proxyTargetClass = true)

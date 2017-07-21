@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Created by liupin on 2017/3/23.
+ * Created by lianhao on 2017/3/23.
  */
 @Configuration
 public class JacksonModulesConfiguration {

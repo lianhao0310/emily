@@ -1,7 +1,7 @@
 package com.alice.emily.module.security.jwt;
 
 /**
- * Created by liupin on 2017/4/7.
+ * Created by lianhao on 2017/4/7.
  */
 public class JWTConstants {
 

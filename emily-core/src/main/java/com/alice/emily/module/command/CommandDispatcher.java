@@ -13,7 +13,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.stream.Collectors;
 
 /**
- * Created by liupin on 2016/12/10.
+ * Created by lianhao on 2016/12/10.
  */
 public class CommandDispatcher {
 

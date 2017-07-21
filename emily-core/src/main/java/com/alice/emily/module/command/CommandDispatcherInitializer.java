@@ -6,7 +6,7 @@ import org.apache.commons.lang3.concurrent.ConcurrentException;
 import org.apache.commons.lang3.concurrent.LazyInitializer;
 
 /**
- * Created by liupin on 2017/2/6.
+ * Created by lianhao on 2017/2/6.
  */
 public class CommandDispatcherInitializer extends LazyInitializer<CommandDispatcher> {
 

@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /**
- * Created by liupin on 2016/11/15.
+ * Created by lianhao on 2016/11/15.
  */
 public class CollectionParameter<T> implements Parameter<T> {
 

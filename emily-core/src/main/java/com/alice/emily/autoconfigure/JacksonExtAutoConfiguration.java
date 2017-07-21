@@ -25,7 +25,7 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * Created by liupin on 2017/3/17.
+ * Created by lianhao on 2017/3/17.
  */
 @Configuration
 @ConditionalOnClass(ObjectMapper.class)

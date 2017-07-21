@@ -16,7 +16,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import javax.servlet.http.HttpServlet;
 
 /**
- * Created by liupin on 2017/3/15.
+ * Created by lianhao on 2017/3/15.
  */
 @Configuration
 @ConditionalOnWebApplication

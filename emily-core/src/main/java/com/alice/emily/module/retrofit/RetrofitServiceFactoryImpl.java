@@ -17,7 +17,7 @@ import java.util.concurrent.ConcurrentMap;
 /**
  * Factory for constructing {@link Retrofit} service instances.
  *
- * @author liupin
+ * @author lianhao
  */
 @Getter
 public class RetrofitServiceFactoryImpl implements RetrofitServiceFactory, DisposableBean {

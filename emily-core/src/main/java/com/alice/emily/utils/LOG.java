@@ -27,7 +27,7 @@ import java.io.IOException;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
- * Created by liupin on 2016/12/7.
+ * Created by lianhao on 2016/12/7.
  */
 public class LOG {
 

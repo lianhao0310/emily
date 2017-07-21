@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Created by liupin on 2017/2/6.
+ * Created by lianhao on 2017/2/6.
  */
 @Configuration
 @ConditionalOnProperty(prefix = "emily.command", name = "enabled")

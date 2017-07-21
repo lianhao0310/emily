@@ -11,7 +11,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Properties;
 
 /**
- * Created by liupin on 2016/12/8.
+ * Created by lianhao on 2016/12/8.
  */
 public class URLUtils {
 

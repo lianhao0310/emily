@@ -11,7 +11,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import javax.ws.rs.ext.MessageBodyReader;
 
 /**
- * Created by liupin on 2017/4/11.
+ * Created by lianhao on 2017/4/11.
  */
 @Configuration
 @ConditionalOnClass({ SecurityContextHolder.class, EnableWebSecurity.class })

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Import;
 import javax.persistence.EntityManager;
 
 /**
- * Created by liupin on 2017/3/2.
+ * Created by lianhao on 2017/3/2.
  */
 @Configuration
 @ConditionalOnClass(EntityManager.class)

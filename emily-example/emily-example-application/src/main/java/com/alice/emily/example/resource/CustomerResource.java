@@ -11,7 +11,7 @@ import javax.ws.rs.PathParam;
 import java.util.List;
 
 /**
- * Created by liupin on 2017/2/9.
+ * Created by lianhao on 2017/2/9.
  */
 @Component
 @Path("customer")

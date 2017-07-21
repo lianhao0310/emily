@@ -10,7 +10,7 @@ import javax.ws.rs.ext.MessageBodyReader;
 import java.lang.annotation.Annotation;
 
 /**
- * Created by liupin on 2017/3/29.
+ * Created by lianhao on 2017/3/29.
  */
 public abstract class AbstractMessageBodyReader<T> implements MessageBodyReader<T> {
 

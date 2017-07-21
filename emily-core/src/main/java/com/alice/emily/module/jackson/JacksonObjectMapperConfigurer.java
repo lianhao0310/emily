@@ -20,7 +20,7 @@ import java.util.Map;
 import java.util.TimeZone;
 
 /**
- * Created by liupin on 2017/3/20.
+ * Created by lianhao on 2017/3/20.
  */
 public class JacksonObjectMapperConfigurer implements Configurer<ObjectMapper> {
 

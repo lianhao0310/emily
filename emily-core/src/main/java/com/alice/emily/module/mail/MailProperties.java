@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by liupin on 2017/1/8.
+ * Created by lianhao on 2017/1/8.
  */
 @Data
 @ConfigurationProperties(prefix = "emily.mail")

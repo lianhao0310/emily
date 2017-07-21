@@ -15,7 +15,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by liupin on 2016/12/1.
+ * Created by lianhao on 2016/12/1.
  */
 public class Banner {
 

@@ -11,7 +11,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * A {@link Qualifier} annotation for {@link okhttp3.Interceptor OkHttp3-Interceptors}.
  *
- * @author liupin
+ * @author lianhao
  * @see OkHttpNetworkInterceptor
  */
 @Target({ METHOD, FIELD, CONSTRUCTOR, PARAMETER })

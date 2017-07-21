@@ -5,7 +5,7 @@ import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import java.util.concurrent.*;
 
 /**
- * Created by liupin on 2016/12/9.
+ * Created by lianhao on 2016/12/9.
  */
 public class Threads {
 

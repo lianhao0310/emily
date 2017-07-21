@@ -5,7 +5,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 
 /**
- * Created by liupin on 2017/4/1.
+ * Created by lianhao on 2017/4/1.
  */
 public class BasicAuthenticationConfigurer extends CredentialAuthenticationConfigurer {
 

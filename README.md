@@ -201,16 +201,16 @@ emily:
     enabled: true        # 是否启用
     server:              # 服务器配置
       ssl: true
-      host: smtp.alice.com
-      username: nagrand@ipalmap.com
+      host: alice.com
+      username: lianhao0310@alice.com
       password: ******
     groups:              # 邮件分组
-      nagrand:
-        from: nagrand@ipalmap.com
-        to: [pin.liu@alice.com,sifan.pan@alice.com,guanyu.yue@alice.com]
+      lenka:
+        from: lianhao0310@alice.com
+        to: [mike@alice.com,jack@alice.com]
       pop:
-        from: nagrand@ipalmap.com
-        to: [kai.zhang@alice.com,yang.qiu@alice.com]
+        from: lianhao0310@alice.com
+        to: [mike@alice.com,jack@alice.com]
 ```
 可使用**com.alice.emily.mail.MailSender**发送邮件
 
@@ -218,7 +218,7 @@ emily:
 
 异常监控，注解在方法上，如果方法执行过程中抛出异常，会触发邮件通知。 group是邮件组
 ```java
-    @AlertIf(value = Exception.class, group = "nagrand", title = "Sorry, just for fun!")
+    @AlertIf(value = Exception.class, group = "lenka", title = "Sorry, just for fun!")
     public void exceptionMethod() throws Exception {
         throw new Exception();
     }
@@ -404,18 +404,18 @@ emily:
 * **多数据源**
 数据源Properties配置：
 ```bash
-datasource.ocean.url=jdbc:postgresql://10.0.23.25:5432/ocean?currentSchema=ocean               # ocean
+datasource.ocean.url=jdbc:postgresql://10.0.0.1:5432/ocean?currentSchema=ocean               # ocean
 datasource.ocean.username=postgres
 datasource.ocean.password=postgres
 datasource.ocean.driver-class-name=org.postgresql.Driver
-datasource.pop.url=jdbc:mysql://10.0.23.9/platform?autoReconnect=true&failOverReadOnly=false   # pop
+datasource.pop.url=jdbc:mysql://10.0.0.2:3306/pop?autoReconnect=true&failOverReadOnly=false   # pop
 datasource.pop.username=root
 datasource.pop.password=
 datasource.pop.driver-class-name=com.mysql.jdbc.Driver
-datasource.nagrand.url=jdbc:postgresql://10.0.23.25:5432/nagrand?currentSchema=road_net        # nagrand
-datasource.nagrand.username=postgres
-datasource.nagrand.password=postgres
-datasource.nagrand.driver-class-name=org.postgresql.Driver
+datasource.lenka.url=jdbc:postgresql://10.0.0.3:5432/lenka?currentSchema=road_net        # lenka
+datasource.lenka.username=postgres
+datasource.lenka.password=postgres
+datasource.lenka.driver-class-name=org.postgresql.Driver
 ```
 
 数据源JavaConfig：
@@ -430,8 +430,8 @@ public class DataSourceConfig {
     }
 
     @Bean
-    @ConfigurationProperties("datasource.nagrand")
-    public DataSourceProperties nagrandDataSourceProperties() {
+    @ConfigurationProperties("datasource.lenka")
+    public DataSourceProperties lenkaDataSourceProperties() {
         return new DataSourceProperties();
     }
 
@@ -449,9 +449,9 @@ public class DataSourceConfig {
     }
 
     @Bean
-    @Qualifier("nagrandDataSource")
-    public DataSource nagrandDataSource() {
-        return nagrandDataSourceProperties().initializeDataSourceBuilder().type(DruidDataSource.class).build();
+    @Qualifier("lenkaDataSource")
+    public DataSource lenkaDataSource() {
+        return lenkaDataSourceProperties().initializeDataSourceBuilder().type(DruidDataSource.class).build();
     }
 
     @Bean
@@ -555,7 +555,7 @@ emily:
 │  │  ├─java
 │  │  │  └─com
 │  │  │      └─alice
-│  │  │          └─nagrand
+│  │  │          └─lenka
 │  │  │              └─grpc
 │  │  │                  └─impl
 │  │  └─resources
@@ -621,7 +621,7 @@ public class GreetCommands {
 ```
 基于CMD模块实现的Console应用：
 ```bash
-[Nagrand] >>> help
+[Lenka] >>> help
          0. admin     addAlias             ( index, alias )
          1. admin     createIndex          ( index )
          2. admin     deleteIndex          ( indexes )
@@ -632,7 +632,7 @@ public class GreetCommands {
          7. admin     swapAlias            ( alias, oldIndex, newIndex )
          8. emily  help                 ( category )
          9. emily  quit
-[Nagrand] >>>
+[Lenka] >>>
 
 ```
 
@@ -768,7 +768,7 @@ emily:
 # keycloak基本配置
 keycloak.realm=master
 keycloak.realmKey=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqdbd/hdjTONLPRzyFaGCEXtj27DtUyNRot9pznnNeNWTnduDwIu9iUMctJzqtD0qt10oNl28YUXakUUk9jPUEvjsoiwRmPPzuIj86VLHFo+lQKMjqWWnrhPRuxEM/9jcolwG8ajGHfzKHsuSrhhWVdbXYdjhU/bccBEpMd+9gi5XB05lIkZOnWnn6a2gV05VvaDaA9FZvDv0RKJC1Hh717D9+g3TqAs9KwjyI7T+IaRQvN3JgF2Mto/L5wV1EVz+tF346XAG23zNzu8TabAH98HCqK7A3rSET2V+p9/eAp2XQZao1Kg1qUMuyG0+4ADju62qIUPOrQf9xrwR5hTdPwIDAQAB
-keycloak.auth-server-url=http://10.0.23.9/auth
+keycloak.auth-server-url=http://10.0.0.1/auth
 keycloak.ssl-required=none
 keycloak.resource=palmap_open
 keycloak.use-resource-role-mappings=true
@@ -797,13 +797,13 @@ emily.keycloak.admin.client-id=${keycloak.resource}
 ```xml
     <properties>
         <wrapper.daemon.id>${project.artifactId}</wrapper.daemon.id>
-        <wrapper.main.class>com.alice.nagrand.ws.Nagrand</wrapper.main.class>
+        <wrapper.main.class>com.alice.lenka.ws.Lenka</wrapper.main.class>
     </properties>
 ```
 
 生成目录结构：
 ```bash
-├─nagrand-ws-2017-02-05  // daemon.id + yyyy-MM-dd
+├─lenka-ws-2017-02-05  // daemon.id + yyyy-MM-dd
 │  ├─bin                 // 启动脚本
 │  ├─conf                // 配置
 │  ├─lib                 // 依赖库
@@ -812,8 +812,8 @@ emily.keycloak.admin.client-id=${keycloak.resource}
 
 CentOS设置开机启动:
 ```bash
-ln -s /opt/nagrand-ws/bin/nagrand-ws /etc/init.d/
-chkconfig nagrand-ws on
+ln -s /opt/lenka-ws/bin/lenka-ws /etc/init.d/
+chkconfig lenka-ws on
 ```
 
 ### Uber (简易部署）
@@ -822,13 +822,13 @@ chkconfig nagrand-ws on
 * pom中添加必要属性
 ```xml
     <properties>
-        <uber.main.class>com.alice.nagrand.console.NagrandConsole</uber.main.class>
+        <uber.main.class>com.alice.lenka.console.LenkaConsole</uber.main.class>
     </properties>
 ```
 
 CentOS后台运行:
 ```bash
-nohup java -jar nagrand-console.jar > nc.log &
+nohup java -jar lenka-console.jar > nc.log &
 ```
 
 ## 6. 项目历史

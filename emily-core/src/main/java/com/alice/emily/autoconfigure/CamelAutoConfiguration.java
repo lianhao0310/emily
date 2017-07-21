@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by liupin on 2017/3/1.
+ * Created by lianhao on 2017/3/1.
  */
 @Configuration
 @ConditionalOnClass(CamelContext.class)

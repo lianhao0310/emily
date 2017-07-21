@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.UUID;
 
 /**
- * Created by liupin on 2017/4/9.
+ * Created by lianhao on 2017/4/9.
  */
 @Log4j2
 @Configuration

@@ -5,7 +5,7 @@ import com.vividsolutions.jts.geom.*;
 import java.util.Collection;
 
 /**
- * Created by liupin on 2017/1/4.
+ * Created by lianhao on 2017/1/4.
  */
 public class WGS84Factory {
 

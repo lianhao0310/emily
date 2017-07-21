@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Created by liupin on 2017/3/27.
+ * Created by lianhao on 2017/3/27.
  */
 @Configuration
 @ConditionalOnClass({ MetricRegistry.class, MetricsConfigurer.class })

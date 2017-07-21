@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Created by liupin on 2017/4/11.
+ * Created by lianhao on 2017/4/11.
  */
 public class HttpSecurityConstraintConfigurer implements HttpSecurityConfigurer {
 

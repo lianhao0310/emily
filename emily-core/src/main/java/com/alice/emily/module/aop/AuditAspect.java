@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * Created by liupin on 2017/2/6.
+ * Created by lianhao on 2017/2/6.
  */
 @Aspect
 public class AuditAspect {

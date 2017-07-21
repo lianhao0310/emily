@@ -6,7 +6,7 @@ import javax.ws.rs.ext.ContextResolver;
 import javax.ws.rs.ext.Provider;
 
 /**
- * Created by liupin on 2017/2/13.
+ * Created by lianhao on 2017/2/13.
  */
 @Provider
 public class ObjectMapperResolver implements ContextResolver<ObjectMapper> {

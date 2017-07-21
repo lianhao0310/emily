@@ -23,7 +23,7 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 
 /**
- * Created by liupin on 2017/4/5.
+ * Created by lianhao on 2017/4/5.
  */
 @Provider
 @Consumes("*/*")

@@ -4,7 +4,7 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * Created by liupin on 2017/3/1.
+ * Created by lianhao on 2017/3/1.
  */
 @Data
 @ConfigurationProperties(prefix = "emily.zookeeper.embedded")

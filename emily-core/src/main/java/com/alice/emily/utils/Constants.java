@@ -5,7 +5,7 @@ import org.apache.commons.lang3.SystemUtils;
 import java.io.File;
 
 /**
- * Created by liupin on 2016/12/30.
+ * Created by lianhao on 2016/12/30.
  */
 public class Constants {
 

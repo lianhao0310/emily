@@ -12,7 +12,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
- * Created by liupin on 2017/4/11.
+ * Created by lianhao on 2017/4/11.
  */
 public class KeycloakSecurityConstraintConfigurer implements HttpSecurityConfigurer {
 

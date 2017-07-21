@@ -15,7 +15,7 @@ import java.util.Collection;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by liupin on 2017/4/10.
+ * Created by lianhao on 2017/4/10.
  */
 @Configuration
 @Import({ OkHttpLoggingConfiguration.class, OkHttpMetricsConfiguration.class })

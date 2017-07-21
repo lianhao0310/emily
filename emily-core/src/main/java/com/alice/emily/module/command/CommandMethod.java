@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 /**
- * Created by liupin on 2016/11/10.
+ * Created by lianhao on 2016/11/10.
  */
 public class CommandMethod<T, X> {
 

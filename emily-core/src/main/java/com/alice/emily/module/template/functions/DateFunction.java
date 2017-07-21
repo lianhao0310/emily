@@ -5,7 +5,7 @@ import org.beetl.core.Context;
 import java.util.Date;
 
 /**
- * Created by liupin on 2017/1/17.
+ * Created by lianhao on 2017/1/17.
  */
 public class DateFunction extends org.beetl.ext.fn.DateFunction {
 

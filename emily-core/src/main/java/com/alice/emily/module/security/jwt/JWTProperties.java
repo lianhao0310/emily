@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.List;
 
 /**
- * Created by liupin on 2017/3/15.
+ * Created by lianhao on 2017/3/15.
  */
 @Data
 @ConfigurationProperties(prefix = "emily.jwt")

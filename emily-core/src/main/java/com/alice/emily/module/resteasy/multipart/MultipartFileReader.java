@@ -14,7 +14,7 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 
 /**
- * Created by liupin on 2017/3/29.
+ * Created by lianhao on 2017/3/29.
  */
 @Provider
 @Consumes("multipart/*")

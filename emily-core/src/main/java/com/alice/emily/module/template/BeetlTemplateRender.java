@@ -7,7 +7,7 @@ import org.beetl.core.Template;
 import java.util.Map;
 
 /**
- * Created by liupin on 2017/2/5.
+ * Created by lianhao on 2017/2/5.
  */
 public class BeetlTemplateRender implements TemplateRender {
 

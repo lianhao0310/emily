@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 /**
- * Created by liupin on 2017/2/9.
+ * Created by lianhao on 2017/2/9.
  */
 @Configuration
 @ConditionalOnClass({ ResteasyDeployment.class, ResteasyHandlerMapping.class })

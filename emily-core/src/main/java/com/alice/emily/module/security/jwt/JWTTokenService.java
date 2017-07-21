@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.Map;
 
 /**
- * Created by liupin on 2017/4/7.
+ * Created by lianhao on 2017/4/7.
  */
 public interface JWTTokenService {
 

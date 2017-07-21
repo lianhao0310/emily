@@ -9,7 +9,7 @@ import org.springframework.context.expression.BeanFactoryResolver;
 import org.springframework.expression.BeanResolver;
 
 /**
- * Created by liupin on 2017/2/6.
+ * Created by lianhao on 2017/2/6.
  */
 @Configuration
 public class ProviderAutoConfiguration {

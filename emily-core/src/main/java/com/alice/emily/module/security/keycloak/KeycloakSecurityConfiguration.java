@@ -28,7 +28,7 @@ import org.springframework.security.web.authentication.session.SessionAuthentica
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
 /**
- * Created by liupin on 2017/4/5.
+ * Created by lianhao on 2017/4/5.
  */
 @Configuration
 @ConditionalOnWebApplication

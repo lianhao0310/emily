@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 /**
- * Created by liupin on 2017/4/9.
+ * Created by lianhao on 2017/4/9.
  */
 @Configuration
 @ConditionalOnClass({ Keycloak.class })

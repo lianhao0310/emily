@@ -4,7 +4,7 @@ import com.alice.emily.core.Configurer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 
 /**
- * Created by liupin on 2017/4/6.
+ * Created by lianhao on 2017/4/6.
  */
 @FunctionalInterface
 public interface HttpSecurityConfigurer extends Configurer<HttpSecurity> {

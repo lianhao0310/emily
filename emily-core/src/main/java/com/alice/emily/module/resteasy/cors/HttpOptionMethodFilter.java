@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by liupin on 2017/3/22.
+ * Created by lianhao on 2017/3/22.
  */
 public class HttpOptionMethodFilter extends OncePerRequestFilter {
     @Override

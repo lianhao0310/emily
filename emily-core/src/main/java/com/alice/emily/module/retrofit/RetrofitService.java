@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
  * <p>
  * Use this annotation to inject a Retrofit annotated interface for manage bean.
  *
- * @author liupin
+ * @author lianhao
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)

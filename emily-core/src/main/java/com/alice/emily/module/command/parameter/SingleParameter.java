@@ -5,7 +5,7 @@ import jodd.typeconverter.TypeConverterManager;
 import java.util.Iterator;
 
 /**
- * Created by liupin on 2016/11/15.
+ * Created by lianhao on 2016/11/15.
  */
 public class SingleParameter<T> implements Parameter<T> {
 

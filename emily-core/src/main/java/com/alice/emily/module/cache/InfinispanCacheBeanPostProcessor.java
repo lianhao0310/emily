@@ -12,7 +12,7 @@ import org.springframework.util.StringUtils;
 import java.lang.reflect.Field;
 
 /**
- * Created by liupin on 2017/2/21.
+ * Created by lianhao on 2017/2/21.
  */
 public class InfinispanCacheBeanPostProcessor extends AbstractAnnotationBeanPostProcessor {
 

@@ -1,7 +1,7 @@
 package com.alice.emily.exception;
 
 /**
- * Created by liupin on 2016/12/10.
+ * Created by lianhao on 2016/12/10.
  */
 public class EmilyResourceException extends EmilyException {
 

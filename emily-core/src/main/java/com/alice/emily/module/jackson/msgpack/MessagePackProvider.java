@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.ext.Provider;
 
 /**
- * Created by liupin on 2017/3/20.
+ * Created by lianhao on 2017/3/20.
  */
 @Provider
 @Produces("application/x-msgpack")

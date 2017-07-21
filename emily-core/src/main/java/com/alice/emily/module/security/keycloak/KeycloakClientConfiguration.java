@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
 
 /**
- * Created by liupin on 2017/4/6.
+ * Created by lianhao on 2017/4/6.
  */
 @Configuration
 @ConditionalOnClass({ Keycloak.class, ResteasyClient.class })

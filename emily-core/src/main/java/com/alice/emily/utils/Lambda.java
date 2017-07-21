@@ -3,7 +3,7 @@ package com.alice.emily.utils;
 import java.util.function.*;
 
 /**
- * Created by liupin on 2016/11/17.
+ * Created by lianhao on 2016/11/17.
  */
 public class Lambda {
 

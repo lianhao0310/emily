@@ -12,7 +12,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * Created by liupin on 2017/2/13.
+ * Created by lianhao on 2017/2/13.
  */
 @Configuration
 @ConditionalOnClass({ Docket.class })

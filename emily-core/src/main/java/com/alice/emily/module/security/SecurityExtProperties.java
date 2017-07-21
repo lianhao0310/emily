@@ -8,7 +8,7 @@ import org.springframework.http.HttpMethod;
 import java.util.List;
 
 /**
- * Created by liupin on 2017/4/6.
+ * Created by lianhao on 2017/4/6.
  */
 @Data
 @ConfigurationProperties(prefix = "security")

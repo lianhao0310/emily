@@ -3,7 +3,7 @@ package com.alice.emily.module.cache;
 import java.lang.annotation.*;
 
 /**
- * Created by liupin on 2017/2/21.
+ * Created by lianhao on 2017/2/21.
  */
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)

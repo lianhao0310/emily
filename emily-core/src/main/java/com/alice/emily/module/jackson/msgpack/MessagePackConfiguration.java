@@ -16,7 +16,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import javax.ws.rs.ext.MessageBodyReader;
 
 /**
- * Created by liupin on 2017/3/29.
+ * Created by lianhao on 2017/3/29.
  */
 @Log4j2
 @Configuration

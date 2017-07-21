@@ -4,7 +4,7 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * Created by liupin on 2017/4/9.
+ * Created by lianhao on 2017/4/9.
  */
 @Data
 @ConfigurationProperties(prefix = "emily.command")

@@ -9,7 +9,7 @@ import org.springframework.util.ReflectionUtils;
 import java.lang.reflect.Field;
 
 /**
- * Created by liupin on 2017/2/6.
+ * Created by lianhao on 2017/2/6.
  */
 public class GRpcClientBeanPostProcessor extends AbstractAnnotationBeanPostProcessor {
 

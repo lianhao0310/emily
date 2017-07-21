@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Created by liupin on 2017/4/1.
+ * Created by lianhao on 2017/4/1.
  */
 public class DigestAuthenticationConfigurer extends CredentialAuthenticationConfigurer {
 

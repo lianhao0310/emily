@@ -21,7 +21,7 @@ import retrofit2.converter.jackson.JacksonConverterFactory;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 /**
- * Created by liupin on 2017/3/30.
+ * Created by lianhao on 2017/3/30.
  */
 @Configuration
 @ConditionalOnClass({ Retrofit.class, OkHttpClient.class })

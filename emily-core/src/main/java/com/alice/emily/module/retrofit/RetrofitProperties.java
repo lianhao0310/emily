@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 import java.util.Map;
 
 /**
- * Created by liupin on 2017/3/30.
+ * Created by lianhao on 2017/3/30.
  */
 @Data
 @ConfigurationProperties(prefix = "emily.retrofit")

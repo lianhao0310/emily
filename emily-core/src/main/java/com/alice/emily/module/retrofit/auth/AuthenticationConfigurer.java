@@ -4,7 +4,7 @@ import com.alice.emily.core.Configurer;
 import okhttp3.OkHttpClient;
 
 /**
- * Created by liupin on 2017/4/1.
+ * Created by lianhao on 2017/4/1.
  */
 @FunctionalInterface
 public interface AuthenticationConfigurer extends Configurer<OkHttpClient.Builder> {

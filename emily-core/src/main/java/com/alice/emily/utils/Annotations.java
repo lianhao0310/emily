@@ -4,7 +4,7 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
 /**
- * Created by liupin on 2017/1/2.
+ * Created by lianhao on 2017/1/2.
  */
 public class Annotations {
 
