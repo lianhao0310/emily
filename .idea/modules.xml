@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/emily.iml" filepath="$PROJECT_DIR$/emily.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-archetype/emily-archetype.iml" filepath="$PROJECT_DIR$/emily-archetype/emily-archetype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-assets/emily-assets.iml" filepath="$PROJECT_DIR$/emily-assets/emily-assets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-bom/emily-bom.iml" filepath="$PROJECT_DIR$/emily-bom/emily-bom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-core/emily-core.iml" filepath="$PROJECT_DIR$/emily-core/emily-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example.iml" filepath="$PROJECT_DIR$/emily-example/emily-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-admin/emily-example-admin.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-admin/emily-example-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-application/emily-example-application.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-application/emily-example-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-parent/emily-parent.iml" filepath="$PROJECT_DIR$/emily-parent/emily-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-camel/emily-starter-camel.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-camel/emily-starter-camel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-command/emily-starter-command.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-command/emily-starter-command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-geo/emily-starter-geo.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-geo/emily-starter-geo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-grpc/emily-starter-grpc.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-grpc/emily-starter-grpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-infinispan/emily-starter-infinispan.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-infinispan/emily-starter-infinispan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-jpa/emily-starter-jpa.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-jpa/emily-starter-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-jwt/emily-starter-jwt.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-jwt/emily-starter-jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-keycloak/emily-starter-keycloak.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-keycloak/emily-starter-keycloak.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-metrics/emily-starter-metrics.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-metrics/emily-starter-metrics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-narayana/emily-starter-narayana.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-narayana/emily-starter-narayana.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-okhttp/emily-starter-okhttp.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-okhttp/emily-starter-okhttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-resteasy/emily-starter-resteasy.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-resteasy/emily-starter-resteasy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-retrofit/emily-starter-retrofit.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-retrofit/emily-starter-retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-swagger/emily-starter-swagger.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-swagger/emily-starter-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-web/emily-starter-web.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-web/emily-starter-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-command/euphoria-starter-command.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-command/euphoria-starter-command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-geo/euphoria-starter-geo.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-geo/euphoria-starter-geo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-grpc/euphoria-starter-grpc.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-grpc/euphoria-starter-grpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-jpa/euphoria-starter-jpa.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-jpa/euphoria-starter-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-jwt/euphoria-starter-jwt.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-jwt/euphoria-starter-jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-keycloak/euphoria-starter-keycloak.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-keycloak/euphoria-starter-keycloak.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-metrics/euphoria-starter-metrics.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-metrics/euphoria-starter-metrics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-narayana/euphoria-starter-narayana.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-narayana/euphoria-starter-narayana.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-okhttp/euphoria-starter-okhttp.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-okhttp/euphoria-starter-okhttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-resteasy/euphoria-starter-resteasy.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-resteasy/euphoria-starter-resteasy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-retrofit/euphoria-starter-retrofit.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-retrofit/euphoria-starter-retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-swagger/euphoria-starter-swagger.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-swagger/euphoria-starter-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-web/euphoria-starter-web.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-web/euphoria-starter-web.iml" />
+    </modules>
+  </component>
+</project>

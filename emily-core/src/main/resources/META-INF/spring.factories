@@ -1,0 +1,21 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.alice.emily.autoconfigure.AopAutoConfiguration,\
+  com.alice.emily.autoconfigure.BeetlAutoConfiguration,\
+  com.alice.emily.autoconfigure.CamelAutoConfiguration,\
+  com.alice.emily.autoconfigure.CommandAutoConfiguration,\
+  com.alice.emily.autoconfigure.GRpcAutoConfiguration,\
+  com.alice.emily.autoconfigure.InfinispanAutoConfiguration,\
+  com.alice.emily.autoconfigure.JacksonExtAutoConfiguration,\
+  com.alice.emily.autoconfigure.JPAAutoConfiguration,\
+  com.alice.emily.autoconfigure.JWTAutoConfiguration,\
+  com.alice.emily.autoconfigure.KeycloakAutoConfiguration,\
+  com.alice.emily.autoconfigure.MailAutoConfiguration,\
+  com.alice.emily.autoconfigure.MetricsAutoConfiguration,\
+  com.alice.emily.autoconfigure.MultipartExtAutoConfiguration,\
+  com.alice.emily.autoconfigure.NiceFeatureAutoConfiguration,\
+  com.alice.emily.autoconfigure.OkHttpAutoConfiguration,\
+  com.alice.emily.autoconfigure.ProviderAutoConfiguration,\
+  com.alice.emily.autoconfigure.ResteasyAutoConfiguration,\
+  com.alice.emily.autoconfigure.RetrofitAutoConfiguration,\
+  com.alice.emily.autoconfigure.SecurityExtAutoConfiguration,\
+  com.alice.emily.autoconfigure.SwaggerAutoConfiguration

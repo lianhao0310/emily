@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.alice.emily</groupId>
+	<artifactId>emily-starter</artifactId>
+	<packaging>pom</packaging>
+	<name>emily-starter</name>
+	<description>Demo project for Spring Boot</description>
+
+	<parent>
+		<groupId>com.alice.emily</groupId>
+		<artifactId>emily-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../emily-parent</relativePath> <!-- lookup parent from repository -->
+	</parent>
+
+	<modules>
+		<module>emily-starter-infinispan</module>
+		<module>emily-starter-camel</module>
+		<module>emily-starter-web</module>
+		<module>emily-starter-command</module>
+		<module>emily-starter-geo</module>
+		<module>emily-starter-grpc</module>
+		<module>emily-starter-jpa</module>
+		<module>emily-starter-narayana</module>
+		<module>emily-starter-jwt</module>
+		<module>emily-starter-resteasy</module>
+		<module>emily-starter-swagger</module>
+		<module>emily-starter-metrics</module>
+		<module>emily-starter-keycloak</module>
+		<module>emily-starter-okhttp</module>
+		<module>emily-starter-retrofit</module>
+	</modules>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.alice.emily</groupId>
+			<artifactId>emily-core</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+</project>
