@@ -18,7 +18,7 @@ Emily使用Checkstyle工具对编码风格进行检测, 不符合规范的代码
 ```bash
 [INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ emily-core ---
 [INFO] Starting audit...
-[ERROR] D:\Source\emily\emily-core\src\main\java\com\alice&emily\emily\aop\AlertIfAspect.java:45: 'if' 结构必须使用大括号 '{}'。 [NeedBraces]
+[ERROR] D:\Source\emily\emily-core\src\main\java\com\alice\emily\aop\AlertIfAspect.java:45: 'if' 结构必须使用大括号 '{}'。 [NeedBraces]
 Audit done.
 ```
 
@@ -100,16 +100,16 @@ Audit done.
 
 ```bash
 mvn archetype:generate
-    -DgroupId=com.alice&emily                         # group
+    -DgroupId=com.alice                         # group
     -DartifactId=test                               # artifact
-    -Dpackage=com.alice&emily.test                    # package
+    -Dpackage=com.alice.test                    # package
     -DarchetypeGroupId=com.alice.emily
     -DarchetypeArtifactId=emily-archetype
     -DarchetypeVersion=2.0-SNAPSHOT
 ```
 
 ```bash
-mvn archetype:generate -DgroupId=com.alice&emily -DartifactId=test -Dpackage=com.alice&emily.test -DarchetypeGroupId=com.alice.emily -DarchetypeArtifactId=emily-archetype -DarchetypeVersion=2.0-SNAPSHOT
+mvn archetype:generate -DgroupId=com.alice -DartifactId=test -Dpackage=com.alice.test -DarchetypeGroupId=com.alice.emily -DarchetypeArtifactId=emily-archetype -DarchetypeVersion=2.0-SNAPSHOT
 ```
 
 * 手动建立
@@ -125,13 +125,13 @@ mvn archetype:generate -DgroupId=com.alice&emily -DartifactId=test -Dpackage=com
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.alice&emily.test</groupId>
+    <groupId>com.alice.test</groupId>
     <artifactId>test-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <wrapper.daemon.id>${project.artifactId}</wrapper.daemon.id>
-        <wrapper.main.class>com.alice&emily.test.EmilyApplication</wrapper.main.class>
+        <wrapper.main.class>com.alice.test.EmilyApplication</wrapper.main.class>
     </properties>
 
     <dependencies>
@@ -201,16 +201,16 @@ emily:
     enabled: true        # 是否启用
     server:              # 服务器配置
       ssl: true
-      host: smtp.alice&emily.com
+      host: smtp.alice.com
       username: nagrand@ipalmap.com
       password: ******
     groups:              # 邮件分组
       nagrand:
         from: nagrand@ipalmap.com
-        to: [pin.liu@alice&emily.com,sifan.pan@alice&emily.com,guanyu.yue@alice&emily.com]
+        to: [pin.liu@alice.com,sifan.pan@alice.com,guanyu.yue@alice.com]
       pop:
         from: nagrand@ipalmap.com
-        to: [kai.zhang@alice&emily.com,yang.qiu@alice&emily.com]
+        to: [kai.zhang@alice.com,yang.qiu@alice.com]
 ```
 可使用**com.alice.emily.mail.MailSender**发送邮件
 
@@ -554,7 +554,7 @@ emily:
 │  ├─main
 │  │  ├─java
 │  │  │  └─com
-│  │  │      └─alice&emily
+│  │  │      └─alice
 │  │  │          └─nagrand
 │  │  │              └─grpc
 │  │  │                  └─impl
@@ -783,7 +783,7 @@ keycloak.security-constraints[0].securityCollections[0].patterns[0]=/protected/*
 # keyclaok admin 管理配置
 emily.keycloak.admin.server-url=${keycloak.auth-server-url}
 emily.keycloak.admin.realm=${keycloak.realm}
-emily.keycloak.admin.username=pin.liu@alice&emily.com
+emily.keycloak.admin.username=pin.liu@alice.com
 emily.keycloak.admin.password=*****
 emily.keycloak.admin.client-id=${keycloak.resource}
 ```
@@ -797,7 +797,7 @@ emily.keycloak.admin.client-id=${keycloak.resource}
 ```xml
     <properties>
         <wrapper.daemon.id>${project.artifactId}</wrapper.daemon.id>
-        <wrapper.main.class>com.alice&emily.nagrand.ws.Nagrand</wrapper.main.class>
+        <wrapper.main.class>com.alice.nagrand.ws.Nagrand</wrapper.main.class>
     </properties>
 ```
 
@@ -822,7 +822,7 @@ chkconfig nagrand-ws on
 * pom中添加必要属性
 ```xml
     <properties>
-        <uber.main.class>com.alice&emily.nagrand.console.NagrandConsole</uber.main.class>
+        <uber.main.class>com.alice.nagrand.console.NagrandConsole</uber.main.class>
     </properties>
 ```
 
