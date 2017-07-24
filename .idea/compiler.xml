@@ -14,6 +14,8 @@
         <module name="emily-core" />
         <module name="emily-example-admin" />
         <module name="emily-example-application" />
+        <module name="emily-example-log4j2" />
+        <module name="emily-example-slf4j-log4j2" />
         <module name="emily-starter-camel" />
         <module name="emily-starter-command" />
         <module name="emily-starter-geo" />
@@ -53,6 +55,8 @@
       <module name="emily-example" target="1.8" />
       <module name="emily-example-admin" target="1.8" />
       <module name="emily-example-application" target="1.8" />
+      <module name="emily-example-log4j2" target="1.8" />
+      <module name="emily-example-slf4j-log4j2" target="1.8" />
       <module name="emily-parent" target="1.8" />
       <module name="emily-starter" target="1.8" />
       <module name="emily-starter-camel" target="1.8" />
