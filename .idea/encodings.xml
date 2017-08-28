@@ -8,18 +8,15 @@
     <file url="file://$PROJECT_DIR$/emily-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-example" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-example/emily-example-admin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/emily-example/emily-example-admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-example/emily-example-application" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/emily-example/euphoria-example-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emily-example/emily-example-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-parent" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/emily-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-camel" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-command" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-geo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-grpc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-infinispan" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-jpa" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-jpa" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-jwt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-keycloak" charset="UTF-8" />

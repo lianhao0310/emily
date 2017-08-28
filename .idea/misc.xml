@@ -79,6 +79,7 @@
         <option value="$PROJECT_DIR$/emily-example/emily-example-application/pom.xml" />
         <option value="$PROJECT_DIR$/emily-starter/emily-starter-jpa/pom.xml" />
         <option value="$PROJECT_DIR$/emily-example/emily-example-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/emily-example/emily-example-client/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
