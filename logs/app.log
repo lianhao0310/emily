@@ -1,0 +1,73 @@
+18:03:55.318 [main] INFO  com.alice.emily.example.EmilyExampleSlf4jLog4j2Application - Starting EmilyExampleSlf4jLog4j2Application on admin-PC with PID 16396 (E:\workpace\emily\emily-example\emily-example-slf4j-log4j2\target\classes started by admin in E:\workpace\emily)
+18:03:55.320 [main] INFO  com.alice.emily.example.EmilyExampleSlf4jLog4j2Application - No active profile set, falling back to default profiles: default
+18:03:55.354 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1460a8c0: startup date [Mon Jul 24 18:03:55 CST 2017]; root of context hierarchy
+18:03:55.838 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'beetlGroupTemplate' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.alice.emily.autoconfigure.BeetlAutoConfiguration$BeetlConfiguration; factoryMethodName=getGroupTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/alice/emily/autoconfigure/BeetlAutoConfiguration$BeetlConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.alice.emily.autoconfigure.BeetlAutoConfiguration$BeetlWebConfiguration; factoryMethodName=getGroupTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/alice/emily/autoconfigure/BeetlAutoConfiguration$BeetlWebConfiguration.class]]
+18:03:56.291 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+18:03:56.427 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alice.emily.autoconfigure.NiceFeatureAutoConfiguration' of type [com.alice.emily.autoconfigure.NiceFeatureAutoConfiguration$$EnhancerBySpringCGLIB$$cc6b686e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:03:56.445 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutor'
+18:03:56.445 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'taskExecutor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:03:56.448 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncConfigurer' of type [com.alice.emily.autoconfigure.NiceFeatureAutoConfiguration$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:03:57.734 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2383 ms
+18:03:57.952 [main] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18:03:57.954 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18:03:57.955 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18:03:57.955 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18:03:57.955 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+18:03:58.510 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1460a8c0: startup date [Mon Jul 24 18:03:55 CST 2017]; root of context hierarchy
+18:03:58.575 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:03:58.576 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:03:58.645 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:03:58.645 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:03:58.685 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:03:58.818 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+18:03:58.990 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+18:03:59.054 [main] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+18:03:59.058 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+18:03:59.177 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1460a8c0: startup date [Mon Jul 24 18:03:55 CST 2017]; root of context hierarchy
+18:03:59.177 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+18:03:59.177 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+18:03:59.178 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+18:04:14.889 [main] INFO  com.alice.emily.example.EmilyExampleSlf4jLog4j2Application - Starting EmilyExampleSlf4jLog4j2Application on admin-PC with PID 22160 (E:\workpace\emily\emily-example\emily-example-slf4j-log4j2\target\classes started by admin in E:\workpace\emily)
+18:04:14.891 [main] INFO  com.alice.emily.example.EmilyExampleSlf4jLog4j2Application - No active profile set, falling back to default profiles: default
+18:04:14.924 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1460a8c0: startup date [Mon Jul 24 18:04:14 CST 2017]; root of context hierarchy
+18:04:15.508 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'beetlGroupTemplate' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.alice.emily.autoconfigure.BeetlAutoConfiguration$BeetlConfiguration; factoryMethodName=getGroupTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/alice/emily/autoconfigure/BeetlAutoConfiguration$BeetlConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.alice.emily.autoconfigure.BeetlAutoConfiguration$BeetlWebConfiguration; factoryMethodName=getGroupTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/alice/emily/autoconfigure/BeetlAutoConfiguration$BeetlWebConfiguration.class]]
+18:04:15.690 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+18:04:15.781 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alice.emily.autoconfigure.NiceFeatureAutoConfiguration' of type [com.alice.emily.autoconfigure.NiceFeatureAutoConfiguration$$EnhancerBySpringCGLIB$$556a51e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:04:15.793 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutor'
+18:04:15.794 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'taskExecutor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:04:15.796 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncConfigurer' of type [com.alice.emily.autoconfigure.NiceFeatureAutoConfiguration$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:04:16.219 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1298 ms
+18:04:16.381 [main] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18:04:16.384 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18:04:16.385 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18:04:16.385 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18:04:16.385 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+18:04:16.933 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1460a8c0: startup date [Mon Jul 24 18:04:14 CST 2017]; root of context hierarchy
+18:04:17.002 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:04:17.002 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:04:17.069 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:04:17.069 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:04:17.109 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:04:17.251 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+18:04:17.417 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+18:04:17.446 [main] INFO  org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServletContainer - Undertow started on port(s) 8080 (http)
+18:04:17.449 [main] INFO  com.alice.emily.example.EmilyExampleSlf4jLog4j2Application - Started EmilyExampleSlf4jLog4j2Application in 2.721 seconds (JVM running for 3.205)
+18:04:17.449 [main] INFO  com.alice.emily.example.EmilyExampleSlf4jLog4j2Application - Begin log after running EmilyExampleSlf4jLog4j2Application
+18:04:17.450 [main] ERROR com.alice.emily.example.EmilyExampleSlf4jLog4j2Application - Has error:
+java.lang.ArithmeticException: / by zero
+	at com.alice.emily.example.EmilyExampleSlf4jLog4j2Application.main(EmilyExampleSlf4jLog4j2Application.java:17) [classes/:?]

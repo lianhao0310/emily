@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-archetype" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-assets" charset="UTF-8" />
@@ -9,7 +9,13 @@
     <file url="file://$PROJECT_DIR$/emily-example" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-example/emily-example-admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-example/emily-example-application" charset="UTF-8" />
+<<<<<<< HEAD
     <file url="file://$PROJECT_DIR$/emily-example/emily-example-client" charset="UTF-8" />
+=======
+    <file url="file://$PROJECT_DIR$/emily-example/emily-example-log4j2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emily-example/emily-example-log4j2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emily-example/emily-example-slf4j-log4j2" charset="UTF-8" />
+>>>>>>> 041d230cb968fecd81d7abf8f16172d8153ba25c
     <file url="file://$PROJECT_DIR$/emily-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-camel" charset="UTF-8" />
@@ -27,5 +33,6 @@
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-retrofit" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-swagger" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-web" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

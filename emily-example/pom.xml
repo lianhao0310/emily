@@ -19,5 +19,6 @@
 	<modules>
 		<module>emily-example-application</module>
 		<module>emily-example-admin</module>
+		<module>emily-example-log4j2</module>
 	</modules>
 </project>

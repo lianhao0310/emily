@@ -10,7 +10,12 @@
       <module fileurl="file://D:\www\java\emily\emily-example\emily-example.iml" filepath="D:\www\java\emily\emily-example\emily-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-admin/emily-example-admin.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-admin/emily-example-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-application/emily-example-application.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-application/emily-example-application.iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-client/emily-example-client.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-client/emily-example-client.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-log4j2/emily-example-log4j2.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-log4j2/emily-example-log4j2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-slf4j-log4j2/emily-example-slf4j-log4j2.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-slf4j-log4j2/emily-example-slf4j-log4j2.iml" />
+>>>>>>> 041d230cb968fecd81d7abf8f16172d8153ba25c
       <module fileurl="file://$PROJECT_DIR$/emily-parent/emily-parent.iml" filepath="$PROJECT_DIR$/emily-parent/emily-parent.iml" />
       <module fileurl="file://D:\www\java\emily\emily-starter\emily-starter.iml" filepath="D:\www\java\emily\emily-starter\emily-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-camel/emily-starter-camel.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-camel/emily-starter-camel.iml" />
@@ -28,6 +33,7 @@
       <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-retrofit/emily-starter-retrofit.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-retrofit/emily-starter-retrofit.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-swagger/emily-starter-swagger.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-swagger/emily-starter-swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-web/emily-starter-web.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-web/emily-starter-web.iml" />
+<<<<<<< HEAD
       <module fileurl="file://D:\www\java\emily\emily-starter\emily-starter-command\euphoria-starter-command.iml" filepath="D:\www\java\emily\emily-starter\emily-starter-command\euphoria-starter-command.iml" />
       <module fileurl="file://D:\www\java\emily\emily-starter\emily-starter-geo\euphoria-starter-geo.iml" filepath="D:\www\java\emily\emily-starter\emily-starter-geo\euphoria-starter-geo.iml" />
       <module fileurl="file://D:\www\java\emily\emily-starter\emily-starter-grpc\euphoria-starter-grpc.iml" filepath="D:\www\java\emily\emily-starter\emily-starter-grpc\euphoria-starter-grpc.iml" />
@@ -41,6 +47,21 @@
       <module fileurl="file://D:\www\java\emily\emily-starter\emily-starter-retrofit\euphoria-starter-retrofit.iml" filepath="D:\www\java\emily\emily-starter\emily-starter-retrofit\euphoria-starter-retrofit.iml" />
       <module fileurl="file://D:\www\java\emily\emily-starter\emily-starter-swagger\euphoria-starter-swagger.iml" filepath="D:\www\java\emily\emily-starter\emily-starter-swagger\euphoria-starter-swagger.iml" />
       <module fileurl="file://D:\www\java\emily\emily-starter\emily-starter-web\euphoria-starter-web.iml" filepath="D:\www\java\emily\emily-starter\emily-starter-web\euphoria-starter-web.iml" />
+=======
+      <module fileurl="file://E:\workpace\emily\emily-starter\emily-starter-command\euphoria-starter-command.iml" filepath="E:\workpace\emily\emily-starter\emily-starter-command\euphoria-starter-command.iml" />
+      <module fileurl="file://E:\workpace\emily\emily-starter\emily-starter-geo\euphoria-starter-geo.iml" filepath="E:\workpace\emily\emily-starter\emily-starter-geo\euphoria-starter-geo.iml" />
+      <module fileurl="file://E:\workpace\emily\emily-starter\emily-starter-grpc\euphoria-starter-grpc.iml" filepath="E:\workpace\emily\emily-starter\emily-starter-grpc\euphoria-starter-grpc.iml" />
+      <module fileurl="file://E:\workpace\emily\emily-starter\emily-starter-jpa\euphoria-starter-jpa.iml" filepath="E:\workpace\emily\emily-starter\emily-starter-jpa\euphoria-starter-jpa.iml" />
+      <module fileurl="file://E:\workpace\emily\emily-starter\emily-starter-jwt\euphoria-starter-jwt.iml" filepath="E:\workpace\emily\emily-starter\emily-starter-jwt\euphoria-starter-jwt.iml" />
+      <module fileurl="file://E:\workpace\emily\emily-starter\emily-starter-keycloak\euphoria-starter-keycloak.iml" filepath="E:\workpace\emily\emily-starter\emily-starter-keycloak\euphoria-starter-keycloak.iml" />
+      <module fileurl="file://E:\workpace\emily\emily-starter\emily-starter-metrics\euphoria-starter-metrics.iml" filepath="E:\workpace\emily\emily-starter\emily-starter-metrics\euphoria-starter-metrics.iml" />
+      <module fileurl="file://E:\workpace\emily\emily-starter\emily-starter-narayana\euphoria-starter-narayana.iml" filepath="E:\workpace\emily\emily-starter\emily-starter-narayana\euphoria-starter-narayana.iml" />
+      <module fileurl="file://E:\workpace\emily\emily-starter\emily-starter-okhttp\euphoria-starter-okhttp.iml" filepath="E:\workpace\emily\emily-starter\emily-starter-okhttp\euphoria-starter-okhttp.iml" />
+      <module fileurl="file://E:\workpace\emily\emily-starter\emily-starter-resteasy\euphoria-starter-resteasy.iml" filepath="E:\workpace\emily\emily-starter\emily-starter-resteasy\euphoria-starter-resteasy.iml" />
+      <module fileurl="file://E:\workpace\emily\emily-starter\emily-starter-retrofit\euphoria-starter-retrofit.iml" filepath="E:\workpace\emily\emily-starter\emily-starter-retrofit\euphoria-starter-retrofit.iml" />
+      <module fileurl="file://E:\workpace\emily\emily-starter\emily-starter-swagger\euphoria-starter-swagger.iml" filepath="E:\workpace\emily\emily-starter\emily-starter-swagger\euphoria-starter-swagger.iml" />
+      <module fileurl="file://E:\workpace\emily\emily-starter\emily-starter-web\euphoria-starter-web.iml" filepath="E:\workpace\emily\emily-starter\emily-starter-web\euphoria-starter-web.iml" />
+>>>>>>> 041d230cb968fecd81d7abf8f16172d8153ba25c
     </modules>
   </component>
 </project>
