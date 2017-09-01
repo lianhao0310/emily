@@ -20,58 +20,58 @@ import java.util.Iterator;
 @SpringBootTest
 public class EmilyExampleElasticsearchApplicationTests {
 
-	@Autowired
-	private ArticleSearchRepository articleSearchRepository;
+    @Autowired
+    private ArticleSearchRepository articleSearchRepository;
 
-	@Test
-	public void testSaveArticleIndex(){
-		Author author=new Author();
-		author.setId(1L);
-		author.setName("tianshouzhi");
-		author.setRemark("java developer");
+    @Test
+    public void testSaveArticleIndex() {
+        Author author = new Author();
+        author.setId(1L);
+        author.setName("tianshouzhi");
+        author.setRemark("java developer");
 
-		Tutorial tutorial=new Tutorial();
-		tutorial.setId(1L);
-		tutorial.setName("elastic search");
+        Tutorial tutorial = new Tutorial();
+        tutorial.setId(1L);
+        tutorial.setName("elastic search");
 
-		Article article =new Article();
-		article.setId(1L);
-		article.setTitle("springboot integreate elasticsearch");
-		article.setAbstracts("springboot integreate elasticsearch is very easy");
-		article.setTutorial(tutorial);
-		article.setAuthor(author);
-		article.setContent("elasticsearch based on lucene,"
-				+ "spring-data-elastichsearch based on elaticsearch"
-				+ ",this tutorial tell you how to integrete springboot with spring-data-elasticsearch");
-		article.setPostTime(new Date());
-		article.setClickCount(1L);
+        Article article = new Article();
+        article.setId(1L);
+        article.setTitle("springboot integreate elasticsearch");
+        article.setAbstracts("springboot integreate elasticsearch is very easy");
+        article.setTutorial(tutorial);
+        article.setAuthor(author);
+        article.setContent("elasticsearch based on lucene,"
+                + "spring-data-elastichsearch based on elaticsearch"
+                + ",this tutorial tell you how to integrete springboot with spring-data-elasticsearch");
+        article.setPostTime(new Date());
+        article.setClickCount(1L);
 
-		articleSearchRepository.save(article);
-	}
+        articleSearchRepository.save(article);
+    }
 
 
-	@Test
-	public void testSearch(){
-		String queryString="springboot";//搜索关键字
-		QueryStringQueryBuilder builder=new QueryStringQueryBuilder(queryString);
-		Iterable<Article> searchResult = articleSearchRepository.search(builder);
-		Iterator<Article> iterator = searchResult.iterator();
-		while(iterator.hasNext()){
-			System.out.println(iterator.next());
-		}
-	}
+    @Test
+    public void testSearch() {
+        String queryString = "springboot";//搜索关键字
+        QueryStringQueryBuilder builder = new QueryStringQueryBuilder(queryString);
+        Iterable<Article> searchResult = articleSearchRepository.search(builder);
+        Iterator<Article> iterator = searchResult.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+    }
 
-	@Test
-	public void testGuava(){
-		String str = "foo,bar,,   qux";
-		Iterable<String> iterable = Splitter.on(',')
-				.trimResults()
-				.omitEmptyStrings()
-				.split(str);
-		System.out.println(iterable.toString());
+    @Test
+    public void testGuava() {
+        String str = "foo,bar,,   qux";
+        Iterable<String> iterable = Splitter.on(',')
+                .trimResults()
+                .omitEmptyStrings()
+                .split(str);
+        System.out.println(iterable.toString());
 
-		String[] strs = str.split(",");
+        String[] strs = str.split(",");
 
-		System.out.println(Arrays.asList(strs).toString());
-	}
+        System.out.println(Arrays.asList(strs).toString());
+    }
 }

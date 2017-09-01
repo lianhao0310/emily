@@ -20,7 +20,15 @@
 		<module>emily-example-application</module>
 		<module>emily-example-admin</module>
 		<module>emily-example-log4j2</module>
+		<module>emily-example-client</module>
+		<module>emily-example-curator</module>
+		<module>emily-example-docker</module>
+		<module>emily-example-elasticsearch</module>
+		<module>emily-example-grpc</module>
+		<module>emily-example-kafka</module>
+		<module>emily-example-slf4j-log4j2</module>
 		<module>emily-example-okhttp</module>
 		<module>emily-example-jsw</module>
+		<module>emily-example-swagger</module>
 	</modules>
 </project>

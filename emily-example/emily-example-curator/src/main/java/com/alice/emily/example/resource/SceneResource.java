@@ -26,13 +26,13 @@ public class SceneResource {
 
     @GET
     @Path("/get")
-    public String get(@QueryParam("id") Long id){
+    public String get(@QueryParam("id") Long id) {
         return zkSceneProvider.onGet(id);
     }
 
     @PUT
     @Path("/create")
-    public void create(@QueryParam("id") Long id, @QueryParam("value") Long value){
+    public void create(@QueryParam("id") Long id, @QueryParam("value") Long value) {
         Map scene = new HashMap();
         scene.put("id", id);
         scene.put("value", value);
@@ -41,7 +41,7 @@ public class SceneResource {
 
     @PUT
     @Path("/update")
-    public void update(@QueryParam("id") Long id, @QueryParam("value") Long value){
+    public void update(@QueryParam("id") Long id, @QueryParam("value") Long value) {
         Map scene = new HashMap();
         scene.put("id", id);
         scene.put("value", value);
@@ -50,7 +50,7 @@ public class SceneResource {
 
     @PUT
     @Path("/delete")
-    public void delete(@QueryParam("id") Long id){
+    public void delete(@QueryParam("id") Long id) {
         zkSceneProvider.onDelete(id);
     }
 }

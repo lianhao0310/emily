@@ -29,7 +29,7 @@ public class ClientController {
     private GreeterGrpc.GreeterBlockingStub stub;
 
     @GET
-    public void getMessage(@QueryParam("name") String name){
+    public void getMessage(@QueryParam("name") String name) {
         logger.info("Will try to greet " + name + " ...");
         HelloRequest request = HelloRequest.newBuilder().setName(name).build();
         HelloReply response;

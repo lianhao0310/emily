@@ -21,6 +21,10 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class EmilyExampleKafkaApplicationTests extends SpringBootServletInitializer implements CommandLineRunner {
 
+    private final CountDownLatch latch = new CountDownLatch(4);
+
+    @Autowired
+    private KafkaTemplate<String, String> template;
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
@@ -30,11 +34,6 @@ public class EmilyExampleKafkaApplicationTests extends SpringBootServletInitiali
     public static void main(String[] args) {
         SpringApplication.run(EmilyExampleKafkaApplicationTests.class, args);
     }
-
-    @Autowired
-    private KafkaTemplate<String, String> template;
-
-    private final CountDownLatch latch = new CountDownLatch(4);
 
     @Override
     public void run(String... args) throws Exception {

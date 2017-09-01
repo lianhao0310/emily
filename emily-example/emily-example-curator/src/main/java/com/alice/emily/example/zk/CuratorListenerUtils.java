@@ -34,13 +34,14 @@ import java.util.concurrent.Executors;
 public class CuratorListenerUtils {
     /**
      * 先测试玩玩
-     * @描述：XXXXXXX
+     *
      * @param args
      * @return void
-     * @exception
+     * @throws
+     * @throws Exception
+     * @描述：XXXXXXX
      * @createTime：2016年5月17日
      * @author: songqinghu
-     * @throws Exception
      */
     public static void main(String[] args) throws Exception {
         CuratorFramework client = clientOne();
@@ -53,15 +54,15 @@ public class CuratorListenerUtils {
         // setDataNode(client, "/two", "sss");
         Thread.sleep(Long.MAX_VALUE);
     }
+
     /**
-     *
-     * @描述：创建一个zookeeper连接---连接方式一: 最简单的连接
      * @return void
-     * @exception
+     * @throws
+     * @描述：创建一个zookeeper连接---连接方式一: 最简单的连接
      * @createTime：2016年5月17日
      * @author: songqinghu
      */
-    public static CuratorFramework clientOne(){
+    public static CuratorFramework clientOne() {
         //zk 地址
         String connectString = "10.0.25.29:2181";
         // 连接时间 和重试次数
@@ -72,28 +73,29 @@ public class CuratorListenerUtils {
     }
 
     /**
-     *
-     * @描述：创建一个zookeeper连接---连接方式二:优选这个
      * @return void
-     * @exception
+     * @throws
+     * @描述：创建一个zookeeper连接---连接方式二:优选这个
      * @createTime：2016年5月17日
      * @author: songqinghu
      */
-    public static CuratorFramework clientTwo(){
+    public static CuratorFramework clientTwo() {
 
         //默认创建的根节点是没有做权限控制的--需要自己手动加权限???----
         ACLProvider aclProvider = new ACLProvider() {
-            private List<ACL> acl ;
+            private List<ACL> acl;
+
             @Override
             public List<ACL> getDefaultAcl() {
-                if(acl ==null){
+                if (acl == null) {
                     ArrayList<ACL> acl = ZooDefs.Ids.CREATOR_ALL_ACL;
                     acl.clear();
-                    acl.add(new ACL(ZooDefs.Perms.ALL, new Id("auth", "admin:admin") ));
+                    acl.add(new ACL(ZooDefs.Perms.ALL, new Id("auth", "admin:admin")));
                     this.acl = acl;
                 }
                 return acl;
             }
+
             @Override
             public List<ACL> getAclForPath(String path) {
                 return acl;
@@ -113,17 +115,17 @@ public class CuratorListenerUtils {
         client.start();
         return client;
     }
+
     /**
-     *
+     * @return void
+     * @throws
+     * @throws Exception
      * @描述：第一种监听器的添加方式: 对指定的节点进行添加操作
      * 仅仅能监控指定的本节点的数据修改,删除 操作 并且只能监听一次 --->不好
-     * @return void
-     * @exception
      * @createTime：2016年5月18日
      * @author: songqinghu
-     * @throws Exception
      */
-    public static void setListenterOne(CuratorFramework client) throws Exception{
+    public static void setListenterOne(CuratorFramework client) throws Exception {
         // 注册观察者，当节点变动时触发
         byte[] data = client.getData().usingWatcher(new Watcher() {
             @Override
@@ -131,52 +133,50 @@ public class CuratorListenerUtils {
                 System.out.println("获取 scene 节点 监听器 : " + event);
             }
         }).forPath("/two");
-        System.out.println("two 节点数据: "+ new String(data));
+        System.out.println("two 节点数据: " + new String(data));
     }
 
     /**
-     *
-     * @描述：第二种监听器的添加方式:
-     * 也是一次性的监听操作,使用后就无法在继续监听了
      * @return void
-     * @exception
+     * @throws
+     * @throws Exception
+     * @描述：第二种监听器的添加方式: 也是一次性的监听操作, 使用后就无法在继续监听了
      * @createTime：2016年5月18日
      * @author: songqinghu
-     * @throws Exception
      */
-    public static void setListenterTwo(CuratorFramework client) throws Exception{
+    public static void setListenterTwo(CuratorFramework client) throws Exception {
 
         ExecutorService pool = Executors.newCachedThreadPool();
 
         CuratorListener listener = new CuratorListener() {
             @Override
             public void eventReceived(CuratorFramework client, CuratorEvent event) throws Exception {
-                System.out.println("监听器  : "+ event.toString());
+                System.out.println("监听器  : " + event.toString());
             }
         };
-        client.getCuratorListenable().addListener(listener,pool);
+        client.getCuratorListenable().addListener(listener, pool);
         client.getData().inBackground().forPath("/two");
         client.getData().inBackground().forPath("/two");
         client.getData().inBackground().forPath("/two");
         client.getData().inBackground().forPath("/two");
-        Thread.sleep(Long.MAX_VALUE );
+        Thread.sleep(Long.MAX_VALUE);
     }
+
     /**
-     *
-     * @描述：第三种监听器的添加方式: Cache 的三种实现 实践
-     *   Path Cache：监视一个路径下1）孩子结点的创建、2）删除，3）以及结点数据的更新。
-     *                  产生的事件会传递给注册的PathChildrenCacheListener。
-     *  Node Cache：监视一个结点的创建、更新、删除，并将结点的数据缓存在本地。
-     *  Tree Cache：Path Cache和Node Cache的“合体”，监视路径下的创建、更新、删除事件，并缓存路径下所有孩子结点的数据。
      * @return void
-     * @exception
+     * @throws
+     * @throws Exception
+     * @描述：第三种监听器的添加方式: Cache 的三种实现 实践
+     * Path Cache：监视一个路径下1）孩子结点的创建、2）删除，3）以及结点数据的更新。
+     * 产生的事件会传递给注册的PathChildrenCacheListener。
+     * Node Cache：监视一个结点的创建、更新、删除，并将结点的数据缓存在本地。
+     * Tree Cache：Path Cache和Node Cache的“合体”，监视路径下的创建、更新、删除事件，并缓存路径下所有孩子结点的数据。
      * @createTime：2016年5月18日
      * @author: songqinghu
-     * @throws Exception
      */
     //1.path Cache  连接  路径  是否获取数据
     //能监听所有的字节点 且是无限监听的模式 但是 指定目录下节点的子节点不再监听
-    public static void setListenterThreeOne(CuratorFramework client) throws Exception{
+    public static void setListenterThreeOne(CuratorFramework client) throws Exception {
         ExecutorService pool = Executors.newCachedThreadPool();
         PathChildrenCache childrenCache = new PathChildrenCache(client, "/test", true);
         PathChildrenCacheListener childrenCacheListener = new PathChildrenCacheListener() {
@@ -186,13 +186,13 @@ public class CuratorListenerUtils {
                 ChildData data = event.getData();
                 switch (event.getType()) {
                     case CHILD_ADDED:
-                        System.out.println("CHILD_ADDED : "+ data.getPath() +"  数据:"+ data.getData());
+                        System.out.println("CHILD_ADDED : " + data.getPath() + "  数据:" + data.getData());
                         break;
                     case CHILD_REMOVED:
-                        System.out.println("CHILD_REMOVED : "+ data.getPath() +"  数据:"+ data.getData());
+                        System.out.println("CHILD_REMOVED : " + data.getPath() + "  数据:" + data.getData());
                         break;
                     case CHILD_UPDATED:
-                        System.out.println("CHILD_UPDATED : "+ data.getPath() +"  数据:"+ data.getData());
+                        System.out.println("CHILD_UPDATED : " + data.getPath() + "  数据:" + data.getData());
                         break;
                     default:
                         break;
@@ -206,7 +206,7 @@ public class CuratorListenerUtils {
 
     //2.Node Cache  监控本节点的变化情况   连接 目录 是否压缩
     //监听本节点的变化  节点可以进行修改操作  删除节点后会再次创建(空节点)
-    public static void setListenterThreeTwo(CuratorFramework client) throws Exception{
+    public static void setListenterThreeTwo(CuratorFramework client) throws Exception {
         ExecutorService pool = Executors.newCachedThreadPool();
         //设置节点的cache
         final NodeCache nodeCache = new NodeCache(client, "/test", false);
@@ -214,16 +214,17 @@ public class CuratorListenerUtils {
             @Override
             public void nodeChanged() throws Exception {
                 System.out.println("the test node is change and result is :");
-                System.out.println("path : "+nodeCache.getCurrentData().getPath());
-                System.out.println("data : "+new String(nodeCache.getCurrentData().getData()));
-                System.out.println("stat : "+nodeCache.getCurrentData().getStat());
+                System.out.println("path : " + nodeCache.getCurrentData().getPath());
+                System.out.println("data : " + new String(nodeCache.getCurrentData().getData()));
+                System.out.println("stat : " + nodeCache.getCurrentData().getStat());
             }
         });
         nodeCache.start();
     }
+
     //3.Tree Cache
     // 监控 指定节点和节点下的所有的节点的变化--无限监听  可以进行本节点的删除(不在创建)
-    public static void setListenterThreeThree(CuratorFramework client) throws Exception{
+    public static void setListenterThreeThree(CuratorFramework client) throws Exception {
         ExecutorService pool = Executors.newCachedThreadPool();
         //设置节点的cache
         TreeCache treeCache = new TreeCache(client, "/scene");
@@ -232,23 +233,23 @@ public class CuratorListenerUtils {
             @Override
             public void childEvent(CuratorFramework client, TreeCacheEvent event) throws Exception {
                 ChildData data = event.getData();
-                if(data !=null){
+                if (data != null) {
                     switch (event.getType()) {
                         case NODE_ADDED:
-                            System.out.println("NODE_ADDED : "+ data.getPath() +"  数据:"+ new String(data.getData()));
+                            System.out.println("NODE_ADDED : " + data.getPath() + "  数据:" + new String(data.getData()));
                             break;
                         case NODE_REMOVED:
-                            System.out.println("NODE_REMOVED : "+ data.getPath() +"  数据:"+ new String(data.getData()));
+                            System.out.println("NODE_REMOVED : " + data.getPath() + "  数据:" + new String(data.getData()));
                             break;
                         case NODE_UPDATED:
-                            System.out.println("NODE_UPDATED : "+ data.getPath() +"  数据:"+ new String(data.getData()));
+                            System.out.println("NODE_UPDATED : " + data.getPath() + "  数据:" + new String(data.getData()));
                             break;
 
                         default:
                             break;
                     }
-                }else{
-                    System.out.println( "data is null : "+ event.getType());
+                } else {
+                    System.out.println("data is null : " + event.getType());
                 }
             }
         });

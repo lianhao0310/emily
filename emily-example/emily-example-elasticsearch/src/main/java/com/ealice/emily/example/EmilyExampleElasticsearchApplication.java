@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class EmilyExampleElasticsearchApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(EmilyExampleElasticsearchApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(EmilyExampleElasticsearchApplication.class, args);
+    }
 }

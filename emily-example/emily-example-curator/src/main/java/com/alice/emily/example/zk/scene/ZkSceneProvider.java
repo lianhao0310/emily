@@ -7,11 +7,12 @@ import java.util.Map;
  */
 public interface ZkSceneProvider {
 
+    String onGet(Long id);
+
     void onCreate(Map scene);
 
     void onUpdate(Map scene);
 
     void onDelete(Long id);
 
-    String onGet(Long id);
 }

@@ -30,7 +30,7 @@ public class ListenerRunner implements CommandLineRunner {
     }
 
     // 监控 指定节点和节点下的所有的节点的变化--无限监听  可以进行本节点的删除(不在创建)
-    public void setListenterThreeThree(CuratorFramework client, String path) throws Exception{
+    public void setListenterThreeThree(CuratorFramework client, String path) throws Exception {
         ExecutorService pool = Executors.newCachedThreadPool();
         //设置节点的cache
         TreeCache treeCache = new TreeCache(client, path);
@@ -39,23 +39,23 @@ public class ListenerRunner implements CommandLineRunner {
             @Override
             public void childEvent(CuratorFramework client, TreeCacheEvent event) throws Exception {
                 ChildData data = event.getData();
-                if(data !=null){
+                if (data != null) {
                     String scene = new String(data.getData());
                     switch (event.getType()) {
                         case NODE_ADDED:
-                            System.out.println("NODE_ADDED : "+ data.getPath() +"  数据:"+ scene.toString());
+                            System.out.println("NODE_ADDED : " + data.getPath() + "  数据:" + scene.toString());
                             break;
                         case NODE_REMOVED:
-                            System.out.println("NODE_REMOVED : "+ data.getPath() +"  数据:"+ scene.toString());
+                            System.out.println("NODE_REMOVED : " + data.getPath() + "  数据:" + scene.toString());
                             break;
                         case NODE_UPDATED:
-                            System.out.println("NODE_UPDATED : "+ data.getPath() +"  数据:"+ scene.toString());
+                            System.out.println("NODE_UPDATED : " + data.getPath() + "  数据:" + scene.toString());
                             break;
 
                         default:
                             break;
                     }
-                }else{
+                } else {
                     System.out.println(event.getType());
                 }
             }

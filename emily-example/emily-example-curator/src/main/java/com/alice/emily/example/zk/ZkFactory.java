@@ -16,19 +16,19 @@ import org.springframework.stereotype.Component;
 @Component
 public class ZkFactory implements ApplicationRunner {
 
+    public static CuratorFramework client;
+
     private static Logger log = LogManager.getLogger();
 
     @Value("${emily.curator.connect-string}")
-    private String host;
+    private static String host;
 
-    public static CuratorFramework client;
-
-    public CuratorFramework getInstance (){
+    public CuratorFramework getInstance() {
         return client;
     }
 
 
-    public void close (){
+    public void close() {
         log.info("zkClient closing...");
         client.close();
         log.info("zkClient closed...");

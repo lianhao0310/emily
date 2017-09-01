@@ -18,7 +18,7 @@ public class Sender {
     private KafkaTemplate kafkaTemplate;
     private Gson gson = new GsonBuilder().create();
 
-    public void sendMessage(){
+    public void sendMessage() {
         Message m = new Message();
         m.setId(System.currentTimeMillis());
         m.setMsg(UUID.randomUUID().toString());

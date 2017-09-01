@@ -43,7 +43,7 @@ public class DefaultZkSceneProvider implements ZkSceneProvider {
     }
 
     @Override
-    public String onGet(Long id){
+    public String onGet(Long id) {
         String scene = null;
         try {
             byte[] bytes = ZkFactory.client.getData().forPath(path + "/" + id);
@@ -56,29 +56,30 @@ public class DefaultZkSceneProvider implements ZkSceneProvider {
 
     /**
      * createMode:节点类型
-     PERSISTENT：持久化节点
-     PERSISTENT_SEQUENTIAL：持久化有序节点
-     EPHEMERAL：临时节点（连接断开自动删除）
-     EPHEMERAL_SEQUENTIAL：临时有序节点（连接断开自动删除）
+     * PERSISTENT：持久化节点
+     * PERSISTENT_SEQUENTIAL：持久化有序节点
+     * EPHEMERAL：临时节点（连接断开自动删除）
+     * EPHEMERAL_SEQUENTIAL：临时有序节点（连接断开自动删除）
+     *
      * @param scene
      * @param client
      * @param type
      */
     private void operation(Map scene, CuratorFramework client, String type) {
         try {
-            if (type.equals("create")){
-                if(client.checkExists().forPath(path + "/" + scene.get("id")) == null){
+            if ("create".equals(type)) {
+                if (client.checkExists().forPath(path + "/" + scene.get("id")) == null) {
                     client.create()
                             .creatingParentsIfNeeded()
                             .withMode(CreateMode.PERSISTENT)
                             .forPath(path + "/" + scene.get("id"), scene.toString().getBytes());
-                }else{
+                } else {
                     log.info(path + "/" + scene.get("id") + " is exit");
                     client.setData().forPath(path + "/" + scene.get("id"), scene.toString().getBytes());
                 }
-            } else if(type.equals("update")) {
+            } else if ("update".equals(type)) {
                 client.setData().forPath(path + "/" + scene.get("id"), scene.toString().getBytes());
-            } else if(type.equals("delete")){
+            } else if ("delete".equals(type)) {
                 client.delete().forPath(path + "/" + scene.get("id"));
             }
         } catch (Exception e) {

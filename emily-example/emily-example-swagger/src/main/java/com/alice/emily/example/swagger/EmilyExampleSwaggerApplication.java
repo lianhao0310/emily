@@ -1,12 +1,12 @@
-package com.alice.emily.example;
+package com.alice.emily.example.swagger;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EmilyExampleClientApplication {
+public class EmilyExampleSwaggerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EmilyExampleClientApplication.class, args);
+        SpringApplication.run(EmilyExampleSwaggerApplication.class, args);
     }
 }
