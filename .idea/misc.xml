@@ -79,8 +79,12 @@
         <option value="$PROJECT_DIR$/emily-example/emily-example-application/pom.xml" />
         <option value="$PROJECT_DIR$/emily-starter/emily-starter-jpa/pom.xml" />
         <option value="$PROJECT_DIR$/emily-example/emily-example-admin/pom.xml" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/emily-example/emily-example-client/pom.xml" />
+=======
         <option value="$PROJECT_DIR$/emily-example/emily-example-log4j2/pom.xml" />
         <option value="$PROJECT_DIR$/emily-example/emily-example-slf4j-log4j2/pom.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/emily-example/emily-example-okhttp/pom.xml" />
         <option value="$PROJECT_DIR$/emily-example/emily-example-jsw/pom.xml" />
         <option value="$PROJECT_DIR$/emily-example/emily-example-elasticsearch/pom.xml" />
@@ -89,6 +93,9 @@
         <option value="$PROJECT_DIR$/emily-example/emily-example-curator/pom.xml" />
         <option value="$PROJECT_DIR$/emily-example/emily-example-kafka/pom.xml" />
         <option value="$PROJECT_DIR$/emily-example/emily-example-docker/pom.xml" />
+=======
+>>>>>>> 041d230cb968fecd81d7abf8f16172d8153ba25c
+>>>>>>> 42fdb3f139b1e22990abf20002a45f2c865395f4
       </list>
     </option>
     <option name="ignoredFiles">
