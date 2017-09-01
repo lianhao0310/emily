@@ -1,6 +1,6 @@
-package com.palmaplus.euphoria.module.resteasy.resource;
+package com.alice.emily.module.resteasy.resource;
 
-import com.palmaplus.euphoria.module.resteasy.multipart.MultipartBeanParam;
+import com.alice.emily.module.resteasy.multipart.MultipartBeanParam;
 import lombok.extern.log4j.Log4j2;
 import org.jboss.resteasy.plugins.providers.multipart.InputPart;
 import org.jboss.resteasy.plugins.providers.multipart.MultipartFormDataInput;
@@ -18,7 +18,7 @@ import javax.ws.rs.core.Response;
 import java.io.IOException;
 
 /**
- * Created by liupin on 2017/3/28.
+ * Created by lianhao on 2017/3/28.
  */
 @Log4j2
 @Component

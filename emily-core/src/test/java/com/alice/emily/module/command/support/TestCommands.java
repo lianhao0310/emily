@@ -1,6 +1,6 @@
-package com.palmaplus.euphoria.module.command.support;
+package com.alice.emily.module.command.support;
 
-import com.palmaplus.euphoria.module.command.Commands;
+import com.alice.emily.module.command.Commands;
 
 import java.util.Arrays;
 import java.util.Date;

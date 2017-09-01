@@ -81,6 +81,14 @@
         <option value="$PROJECT_DIR$/emily-example/emily-example-admin/pom.xml" />
         <option value="$PROJECT_DIR$/emily-example/emily-example-log4j2/pom.xml" />
         <option value="$PROJECT_DIR$/emily-example/emily-example-slf4j-log4j2/pom.xml" />
+        <option value="$PROJECT_DIR$/emily-example/emily-example-okhttp/pom.xml" />
+        <option value="$PROJECT_DIR$/emily-example/emily-example-jsw/pom.xml" />
+        <option value="$PROJECT_DIR$/emily-example/emily-example-elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/emily-example/emily-example-grpc/pom.xml" />
+        <option value="$PROJECT_DIR$/emily-starter/emily-starter-curator/pom.xml" />
+        <option value="$PROJECT_DIR$/emily-example/emily-example-curator/pom.xml" />
+        <option value="$PROJECT_DIR$/emily-example/emily-example-kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/emily-example/emily-example-docker/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan
 public class EmilyExampleOkHttpApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(EmilyExampleOkHttpApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(EmilyExampleOkHttpApplication.class, args);
+    }
 }

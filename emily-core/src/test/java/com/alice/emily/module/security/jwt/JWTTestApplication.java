@@ -1,7 +1,7 @@
-package com.palmaplus.euphoria.module.security.jwt;
+package com.alice.emily.module.security.jwt;
 
-import com.palmaplus.euphoria.autoconfigure.KeycloakAutoConfiguration;
-import com.palmaplus.euphoria.module.security.jwt.resource.InsecureResource;
+import com.alice.emily.autoconfigure.KeycloakAutoConfiguration;
+import com.alice.emily.module.security.jwt.resource.InsecureResource;
 import org.keycloak.adapters.springboot.KeycloakSpringBootConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;

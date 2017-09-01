@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.security.jwt.resource;
+package com.alice.emily.module.security.jwt.resource;
 
 import org.springframework.stereotype.Component;
 
@@ -8,7 +8,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
- * Created by liupin on 2017/4/7.
+ * Created by lianhao on 2017/4/7.
  */
 @Component
 @Path("/insecure")

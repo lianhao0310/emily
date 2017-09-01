@@ -1,6 +1,6 @@
-package com.palmaplus.euphoria.module.command.support;
+package com.alice.emily.module.command.support;
 
-import com.palmaplus.euphoria.module.command.Command;
+import com.alice.emily.module.command.Command;
 
 public interface SuperCommand {
     @Command

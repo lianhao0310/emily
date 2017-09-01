@@ -1,7 +1,7 @@
-package com.palmaplus.euphoria.module.camel;
+package com.alice.emily.module.camel;
 
 import com.google.common.util.concurrent.Uninterruptibles;
-import com.palmaplus.euphoria.module.camel.configuration.CamelJmsTestConfiguration;
+import com.alice.emily.module.camel.configuration.CamelJmsTestConfiguration;
 import org.apache.activemq.artemis.jms.client.ActiveMQDestination;
 import org.apache.activemq.artemis.jms.client.ActiveMQQueue;
 import org.apache.activemq.artemis.jms.client.ActiveMQTopic;
@@ -18,7 +18,7 @@ import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by liupin on 2017/2/10.
+ * Created by lianhao on 2017/2/10.
  */
 @SpringBootTest
 @Import(CamelJmsTestConfiguration.class)

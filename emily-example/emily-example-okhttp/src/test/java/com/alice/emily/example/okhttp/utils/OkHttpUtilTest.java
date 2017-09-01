@@ -32,14 +32,14 @@ public class OkHttpUtilTest {
     }
 
     @Test
-    public void postMap() throws Exception{
+    public void postMap() throws Exception {
         Map<String, Object> map = new HashMap<String, Object>();
-        map.put("name","mike");
-        map.put("age","20");
+        map.put("name", "mike");
+        map.put("age", "20");
         try {
             String postResponse = OkHttpUtil.post("http://localhost:8080/default/post", map);
             System.out.println(postResponse);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

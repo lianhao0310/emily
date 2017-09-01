@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ConditionalOnClass({ ZooKeeper.class })
-@ConditionalOnProperty(prefix = "emily.zookeeper.embedded", name = "enabled", havingValue = "true")
+@ConditionalOnProperty(prefix = "emily.zk.embedded", name = "enabled", havingValue = "true")
 public class EmbeddedZookeeperConfiguration {
 
     @Bean(initMethod = "start", destroyMethod = "stop")

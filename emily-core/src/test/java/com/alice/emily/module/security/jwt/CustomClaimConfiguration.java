@@ -1,8 +1,8 @@
-package com.palmaplus.euphoria.module.security.jwt;
+package com.alice.emily.module.security.jwt;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import com.palmaplus.euphoria.module.security.principal.SimpleUserDetails;
+import com.alice.emily.module.security.principal.SimpleUserDetails;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -20,7 +20,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * Created by liupin on 2017/4/7.
+ * Created by lianhao on 2017/4/7.
  */
 @Configuration
 @ConditionalOnProperty(prefix = "test.custom", name = "claim", havingValue = "true")

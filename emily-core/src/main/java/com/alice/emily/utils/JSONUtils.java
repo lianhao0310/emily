@@ -4,14 +4,16 @@ import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector;
 import com.fasterxml.jackson.databind.type.CollectionType;
-import com.google.common.base.Preconditions;
+import lombok.NonNull;
 import lombok.SneakyThrows;
+import lombok.experimental.UtilityClass;
 
 import java.util.List;
 
 /**
  * Created by lianhao on 2017/3/17.
  */
+@UtilityClass
 public class JSONUtils {
 
     private static volatile ObjectMapper objectMapper;
@@ -36,14 +38,13 @@ public class JSONUtils {
      * 从源字符串中解析出Java对象
      *
      * @param source 源字符串
-     * @param clazz  目标类型
+     * @param type  目标类型
      * @param <T>    类型参数
      * @return 目标对象
      */
-    public static <T> T fromJsonObject(String source, Class<T> clazz) {
-        Preconditions.checkNotNull(clazz, "class type must be provided");
-        JavaType javaType = getMapper().getTypeFactory().constructType(clazz);
-        return fromJson(source, javaType);
+    @SneakyThrows
+    public static <T> T parseObject(@NonNull String source, @NonNull Class<T> type) {
+        return getMapper().readValue(source, type);
     }
 
     /**
@@ -54,16 +55,14 @@ public class JSONUtils {
      * @param <E>         类型参数
      * @return 目标对象列表
      */
-    public static <E> List<E> fromJsonArray(String source, Class<E> elementType) {
-        Preconditions.checkNotNull(elementType, "element type must be provided");
+    @SneakyThrows
+    public static <E> List<E> parseArray(@NonNull String source, @NonNull Class<E> elementType) {
         CollectionType type = getMapper().getTypeFactory().constructCollectionType(List.class, elementType);
-        return fromJson(source, type);
+        return getMapper().readValue(source, type);
     }
 
     @SneakyThrows
-    private static <T> T fromJson(String source, JavaType type) {
-        Preconditions.checkNotNull(source, "source must be provided");
-        Preconditions.checkNotNull(type, "java type must be provided");
+    private static <T> T fromJson(@NonNull String source, @NonNull JavaType type) {
         return getMapper().readValue(source, type);
     }
 
@@ -74,8 +73,7 @@ public class JSONUtils {
      * @return Json字符串
      */
     @SneakyThrows
-    public static String toJson(Object value) {
-        Preconditions.checkNotNull(value, "object value must be provided");
+    public static String toJson(@NonNull Object value) {
         return getMapper().writeValueAsString(value);
     }
 }

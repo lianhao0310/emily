@@ -1,7 +1,7 @@
-package com.palmaplus.euphoria.module.resteasy.resource;
+package com.alice.emily.module.resteasy.resource;
 
-import com.palmaplus.euphoria.utils.LOG;
-import com.palmaplus.euphoria.utils.logging.Logger;
+import com.alice.emily.utils.LOG;
+import com.alice.emily.utils.logging.Logger;
 import org.springframework.stereotype.Component;
 
 import javax.ws.rs.container.ContainerRequestContext;
@@ -10,7 +10,7 @@ import javax.ws.rs.ext.Provider;
 import java.io.IOException;
 
 /**
- * Created by liupin on 2016/12/6.
+ * Created by lianhao on 2016/12/6.
  */
 @Component
 @Provider

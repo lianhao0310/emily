@@ -1,9 +1,9 @@
-package com.palmaplus.euphoria.module.aop;
+package com.alice.emily.module.aop;
 
 import com.google.common.util.concurrent.Uninterruptibles;
-import com.palmaplus.euphoria.core.BeanProvider;
-import com.palmaplus.euphoria.utils.Errors;
-import com.palmaplus.euphoria.utils.Hacks;
+import com.alice.emily.core.BeanProvider;
+import com.alice.emily.utils.Errors;
+import com.alice.emily.utils.Hacks;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,7 +15,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by liupin on 2017/4/8.
+ * Created by lianhao on 2017/4/8.
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest

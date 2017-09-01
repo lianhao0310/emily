@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.resteasy.resource;
+package com.alice.emily.module.resteasy.resource;
 
 import org.springframework.stereotype.Component;
 
@@ -6,7 +6,7 @@ import javax.ws.rs.ext.ContextResolver;
 import javax.ws.rs.ext.Provider;
 
 /**
- * Created by liupin on 2016/12/6.
+ * Created by lianhao on 2016/12/6.
  */
 @Component
 @Provider

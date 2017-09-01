@@ -1,8 +1,8 @@
-package com.palmaplus.euphoria.module.command.support;
+package com.alice.emily.module.command.support;
 
-import com.palmaplus.euphoria.module.command.Command;
-import com.palmaplus.euphoria.module.command.Commands;
-import com.palmaplus.euphoria.module.command.DiscoverMode;
+import com.alice.emily.module.command.Command;
+import com.alice.emily.module.command.Commands;
+import com.alice.emily.module.command.DiscoverMode;
 
 @Commands(category = "greet", mode = DiscoverMode.ANNOTATED_METHOD)
 public class GreetCommands implements SuperCommand {

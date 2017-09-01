@@ -14,10 +14,18 @@
         <module name="emily-core" />
         <module name="emily-example-admin" />
         <module name="emily-example-application" />
+        <module name="emily-example-curator" />
+        <module name="emily-example-docker" />
+        <module name="emily-example-elasticsearch" />
+        <module name="emily-example-grpc" />
+        <module name="emily-example-jsw" />
+        <module name="emily-example-kafka" />
         <module name="emily-example-log4j2" />
+        <module name="emily-example-okhttp" />
         <module name="emily-example-slf4j-log4j2" />
         <module name="emily-starter-camel" />
         <module name="emily-starter-command" />
+        <module name="emily-starter-curator" />
         <module name="emily-starter-geo" />
         <module name="emily-starter-grpc" />
         <module name="emily-starter-infinispan" />
@@ -55,12 +63,21 @@
       <module name="emily-example" target="1.8" />
       <module name="emily-example-admin" target="1.8" />
       <module name="emily-example-application" target="1.8" />
+      <module name="emily-example-curator" target="1.8" />
+      <module name="emily-example-docker" target="1.8" />
+      <module name="emily-example-elasticsearch" target="1.8" />
+      <module name="emily-example-grpc" target="1.8" />
+      <module name="emily-example-jsw" target="1.8" />
+      <module name="emily-example-kafka" target="1.8" />
       <module name="emily-example-log4j2" target="1.8" />
+      <module name="emily-example-okhttp" target="1.8" />
+      <module name="emily-example-resteasy" target="1.8" />
       <module name="emily-example-slf4j-log4j2" target="1.8" />
       <module name="emily-parent" target="1.8" />
       <module name="emily-starter" target="1.8" />
       <module name="emily-starter-camel" target="1.8" />
       <module name="emily-starter-command" target="1.8" />
+      <module name="emily-starter-curator" target="1.8" />
       <module name="emily-starter-geo" target="1.8" />
       <module name="emily-starter-grpc" target="1.8" />
       <module name="emily-starter-infinispan" target="1.8" />

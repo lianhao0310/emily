@@ -9,13 +9,21 @@
     <file url="file://$PROJECT_DIR$/emily-example" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-example/emily-example-admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-example/emily-example-application" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emily-example/emily-example-curator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emily-example/emily-example-docker" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emily-example/emily-example-elasticsearch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emily-example/emily-example-grpc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emily-example/emily-example-jsw" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emily-example/emily-example-kafka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-example/emily-example-log4j2" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/emily-example/emily-example-log4j2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emily-example/emily-example-okhttp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emily-example/emily-example-resteasy" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-example/emily-example-slf4j-log4j2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-camel" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-command" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-curator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-geo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-grpc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emily-starter/emily-starter-infinispan" charset="UTF-8" />

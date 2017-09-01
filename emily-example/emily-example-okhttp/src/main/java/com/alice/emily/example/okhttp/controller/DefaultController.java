@@ -22,19 +22,19 @@ import java.util.Map;
 public class DefaultController {
     @GET
     @Path("/{id}")
-    public Response get(@PathParam("id") Long id){
+    public Response get(@PathParam("id") Long id) {
         return Response.ok().entity(id).build();
     }
 
     @POST
     @Path("/post")
-    public Response post(String data){
+    public Response post(String data) {
         return Response.ok().entity(data).build();
     }
 
     @POST
     @Path("/postMap")
-    public Response postMap(Map<String, Object> data){
+    public Response postMap(Map<String, Object> data) {
         return Response.ok().entity(data).build();
     }
 }

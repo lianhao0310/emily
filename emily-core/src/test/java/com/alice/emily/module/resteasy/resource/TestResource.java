@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.resteasy.resource;
+package com.alice.emily.module.resteasy.resource;
 
 import org.springframework.stereotype.Component;
 

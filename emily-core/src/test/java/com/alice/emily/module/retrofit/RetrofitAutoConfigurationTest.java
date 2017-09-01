@@ -1,9 +1,9 @@
-package com.palmaplus.euphoria.module.retrofit;
+package com.alice.emily.module.retrofit;
 
-import com.palmaplus.euphoria.autoconfigure.JacksonExtAutoConfiguration;
-import com.palmaplus.euphoria.autoconfigure.OkHttpAutoConfiguration;
-import com.palmaplus.euphoria.autoconfigure.ProviderAutoConfiguration;
-import com.palmaplus.euphoria.autoconfigure.RetrofitAutoConfiguration;
+import com.alice.emily.autoconfigure.JacksonExtAutoConfiguration;
+import com.alice.emily.autoconfigure.OkHttpAutoConfiguration;
+import com.alice.emily.autoconfigure.ProviderAutoConfiguration;
+import com.alice.emily.autoconfigure.RetrofitAutoConfiguration;
 import io.reactivex.Observable;
 import lombok.Data;
 import org.junit.After;
@@ -29,7 +29,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Unit tests for {@link RetrofitAutoConfiguration}
  *
- * @author liupin
+ * @author lianhao
  */
 public class RetrofitAutoConfigurationTest {
 
@@ -51,7 +51,7 @@ public class RetrofitAutoConfigurationTest {
     @Before
     public void setup() {
         context = new AnnotationConfigApplicationContext();
-        EnvironmentTestUtils.addEnvironment(context, "euphoria.retrofit.clients.test.base-url:http://localhost/");
+        EnvironmentTestUtils.addEnvironment(context, "emily.retrofit.clients.test.base-url:http://localhost/");
         context.register(
                 RetrofitAutoConfiguration.class,
                 OkHttpAutoConfiguration.class,

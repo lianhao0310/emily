@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.security.jwt.resource;
+package com.alice.emily.module.security.jwt.resource;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -10,7 +10,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 
 /**
- * Created by liupin on 2017/4/5.
+ * Created by lianhao on 2017/4/5.
  */
 @Component
 @Path("/protected-resource")

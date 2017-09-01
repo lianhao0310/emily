@@ -1,6 +1,11 @@
 package com.alice.emily.autoconfigure;
 
-import com.alice.emily.module.resteasy.multipart.*;
+
+import com.alice.emily.module.resteasy.multipart.MultipartFileArrayReader;
+import com.alice.emily.module.resteasy.multipart.MultipartFileListReader;
+import com.alice.emily.module.resteasy.multipart.MultipartFileReader;
+import com.alice.emily.module.resteasy.multipart.MultipartFromBeanParamReader;
+import com.alice.emily.module.resteasy.multipart.MultipartServletResolver;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

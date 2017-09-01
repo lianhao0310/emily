@@ -1,10 +1,10 @@
-package com.palmaplus.euphoria.module.geo;
+package com.alice.emily.module.geo;
 
 import com.vividsolutions.jts.geom.Geometry;
 import org.junit.Test;
 
 /**
- * Created by liupin on 2017/1/5.
+ * Created by lianhao on 2017/1/5.
  */
 public class CRSTest {
 

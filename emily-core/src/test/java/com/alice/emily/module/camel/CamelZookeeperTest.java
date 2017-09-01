@@ -1,7 +1,7 @@
-package com.palmaplus.euphoria.module.camel;
+package com.alice.emily.module.camel;
 
 import com.google.common.util.concurrent.Uninterruptibles;
-import com.palmaplus.euphoria.module.camel.configuration.CamelZookeeperTestConfiguration;
+import com.alice.emily.module.camel.configuration.CamelZookeeperTestConfiguration;
 import org.apache.camel.EndpointInject;
 import org.apache.camel.ProducerTemplate;
 import org.junit.Test;
@@ -13,11 +13,11 @@ import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by liupin on 2017/2/16.
+ * Created by lianhao on 2017/2/16.
  */
 @SpringBootTest
 @Import(CamelZookeeperTestConfiguration.class)
-@TestPropertySource(properties = "euphoria.zookeeper.embedded.enabled=true")
+@TestPropertySource(properties = "emily.zookeeper.embedded.enabled=true")
 public class CamelZookeeperTest extends AbstractJUnit4SpringContextTests {
 
     @EndpointInject(uri = "zookeeper://localhost:2181/test/data?create=true&createMode=PERSISTENT")

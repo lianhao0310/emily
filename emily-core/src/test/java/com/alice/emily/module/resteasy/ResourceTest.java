@@ -1,8 +1,8 @@
-package com.palmaplus.euphoria.module.resteasy;
+package com.alice.emily.module.resteasy;
 
+import com.alice.emily.module.resteasy.resource.Person;
 import com.github.kevinsawicki.http.HttpRequest;
 import com.google.common.collect.Lists;
-import com.palmaplus.euphoria.module.resteasy.resource.Person;
 import org.jboss.resteasy.util.HttpResponseCodes;
 import org.junit.Assert;
 import org.junit.Test;

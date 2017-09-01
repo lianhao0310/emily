@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.core;
+package com.alice.emily.core;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,7 +12,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by liupin on 2017/2/6.
+ * Created by lianhao on 2017/2/6.
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest

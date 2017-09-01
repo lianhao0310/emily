@@ -1,6 +1,6 @@
-package com.palmaplus.euphoria.module.resteasy;
+package com.alice.emily.module.resteasy;
 
-import com.palmaplus.euphoria.module.resteasy.resource.Person;
+import com.alice.emily.module.resteasy.resource.Person;
 import org.assertj.core.api.Assertions;
 import org.jboss.resteasy.client.jaxrs.ResteasyClient;
 import org.junit.Test;
@@ -13,7 +13,7 @@ import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
 
 /**
- * Created by liupin on 2017/4/6.
+ * Created by lianhao on 2017/4/6.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class ResteasyClientTest extends AbstractJUnit4SpringContextTests {

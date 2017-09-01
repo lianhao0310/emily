@@ -1,11 +1,11 @@
-package com.palmaplus.euphoria.module.camel.configuration;
+package com.alice.emily.module.camel.configuration;
 
 import org.apache.camel.Consume;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Created by liupin on 2017/2/10.
+ * Created by lianhao on 2017/2/10.
  */
 @Configuration
 public class CamelJmsTestConfiguration {

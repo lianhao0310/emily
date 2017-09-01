@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.security;
+package com.alice.emily.module.security;
 
 import org.junit.Test;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -6,7 +6,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Created by liupin on 2017/4/11.
+ * Created by lianhao on 2017/4/11.
  */
 public class PasswordEncoderTest {
 

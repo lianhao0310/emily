@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.command.support;
+package com.alice.emily.module.command.support;
 
 import lombok.Data;
 

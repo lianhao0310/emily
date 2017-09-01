@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * Created by Lianhao on 2017/8/21.
  */
 @Data
-@ConfigurationProperties(prefix = "emily.zookeeper")
+@ConfigurationProperties(prefix = "emily.zk")
 public class ZooKeeperProperties {
 
     private Zookeeper embedded = new Zookeeper();

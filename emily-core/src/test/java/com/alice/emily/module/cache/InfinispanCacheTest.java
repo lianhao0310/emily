@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.cache;
+package com.alice.emily.module.cache;
 
 import lombok.Data;
 import org.hibernate.search.annotations.Analyze;
@@ -20,7 +20,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Created by liupin on 2017/2/6.
+ * Created by lianhao on 2017/2/6.
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(properties = "spring.cache.type=infinispan")

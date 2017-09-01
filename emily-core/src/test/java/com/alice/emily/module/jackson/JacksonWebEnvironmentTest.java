@@ -1,13 +1,13 @@
-package com.palmaplus.euphoria.module.jackson;
+package com.alice.emily.module.jackson;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.palmaplus.euphoria.core.BeanProvider;
-import com.palmaplus.euphoria.module.jackson.msgpack.MessagePackMapper;
-import com.palmaplus.euphoria.utils.JSONUtils;
+import com.alice.emily.core.BeanProvider;
+import com.alice.emily.module.jackson.msgpack.MessagePackMapper;
+import com.alice.emily.utils.JSONUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,7 +16,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Created by liupin on 2017/4/10.
+ * Created by lianhao on 2017/4/10.
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest

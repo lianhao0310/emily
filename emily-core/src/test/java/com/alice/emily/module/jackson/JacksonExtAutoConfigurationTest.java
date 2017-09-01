@@ -1,12 +1,12 @@
-package com.palmaplus.euphoria.module.jackson;
+package com.alice.emily.module.jackson;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.palmaplus.euphoria.autoconfigure.JacksonExtAutoConfiguration;
-import com.palmaplus.euphoria.utils.JSONUtils;
+import com.alice.emily.autoconfigure.JacksonExtAutoConfiguration;
+import com.alice.emily.utils.JSONUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,7 +16,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Created by liupin on 2017/3/31.
+ * Created by lianhao on 2017/3/31.
  */
 public class JacksonExtAutoConfigurationTest {
 

@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.resteasy.resource;
+package com.alice.emily.module.resteasy.resource;
 
 import lombok.NonNull;
 import org.jboss.resteasy.annotations.cache.Cache;
@@ -15,7 +15,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
- * Created by liupin on 2017/3/27.
+ * Created by lianhao on 2017/3/27.
  */
 @Component
 @Path("/person")

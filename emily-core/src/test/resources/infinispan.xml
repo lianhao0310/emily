@@ -25,7 +25,7 @@
         <local-cache name="test_index" configuration="base-template">
             <indexing index="LOCAL">
                 <indexed-entities>
-                    <indexed-entity>com.palmaplus.euphoria.module.cache.InfinispanCacheTest$UserInfo</indexed-entity>
+                    <indexed-entity>com.alice.emily.module.cache.InfinispanCacheTest$UserInfo</indexed-entity>
                 </indexed-entities>
                 <property name="default.directory_provider">infinispan</property>
             </indexing>

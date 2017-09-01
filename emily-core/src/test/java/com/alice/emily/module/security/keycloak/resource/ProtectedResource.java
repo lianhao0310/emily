@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.security.keycloak.resource;
+package com.alice.emily.module.security.keycloak.resource;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -14,7 +14,7 @@ import javax.ws.rs.core.Response;
 import java.security.Principal;
 
 /**
- * Created by liupin on 2017/4/5.
+ * Created by lianhao on 2017/4/5.
  */
 @Component
 @Path("/protected/resource")

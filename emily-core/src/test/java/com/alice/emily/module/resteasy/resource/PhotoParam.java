@@ -1,13 +1,13 @@
-package com.palmaplus.euphoria.module.resteasy.resource;
+package com.alice.emily.module.resteasy.resource;
 
-import com.palmaplus.euphoria.module.resteasy.multipart.MultipartFileParam;
+import com.alice.emily.module.resteasy.multipart.MultipartFileParam;
 import lombok.Data;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.ws.rs.FormParam;
 
 /**
- * Created by liupin on 2017/3/29.
+ * Created by lianhao on 2017/3/29.
  */
 @Data
 public class PhotoParam {

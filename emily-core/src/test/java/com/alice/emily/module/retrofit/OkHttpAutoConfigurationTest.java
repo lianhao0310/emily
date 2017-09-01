@@ -1,6 +1,6 @@
-package com.palmaplus.euphoria.module.retrofit;
+package com.alice.emily.module.retrofit;
 
-import com.palmaplus.euphoria.autoconfigure.OkHttpAutoConfiguration;
+import com.alice.emily.autoconfigure.OkHttpAutoConfiguration;
 import okhttp3.OkHttpClient;
 import org.junit.After;
 import org.junit.Before;
@@ -54,9 +54,9 @@ public class OkHttpAutoConfigurationTest {
     public void testOkHttpClientAutoConfiguredWithCustomProperties() {
         context = new AnnotationConfigApplicationContext();
         context.register(OkHttpAutoConfiguration.class);
-        EnvironmentTestUtils.addEnvironment(context, "euphoria.okhttp.connection-timeout:500");
-        EnvironmentTestUtils.addEnvironment(context, "euphoria.okhttp.read-timeout:600");
-        EnvironmentTestUtils.addEnvironment(context, "euphoria.okhttp.write-timeout:700");
+        EnvironmentTestUtils.addEnvironment(context, "emily.okhttp.connection-timeout:500");
+        EnvironmentTestUtils.addEnvironment(context, "emily.okhttp.read-timeout:600");
+        EnvironmentTestUtils.addEnvironment(context, "emily.okhttp.write-timeout:700");
         context.refresh();
 
         OkHttpClient okHttpClient = context.getBean(OkHttpClient.class);

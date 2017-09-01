@@ -1,7 +1,7 @@
-package com.palmaplus.euphoria.module.geo;
+package com.alice.emily.module.geo;
 
 import com.google.common.base.Strings;
-import com.palmaplus.euphoria.utils.Errors;
+import com.alice.emily.utils.Errors;
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.Point;
 import org.apache.commons.lang3.StringUtils;
@@ -19,7 +19,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * Created by liupin on 2017/1/4.
+ * Created by lianhao on 2017/1/4.
  */
 public class GeoTest {
 

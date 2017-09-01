@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.resteasy.resource;
+package com.alice.emily.module.resteasy.resource;
 
 import com.google.common.collect.Maps;
 import org.springframework.stereotype.Service;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 
 /**
- * Created by liupin on 2016/12/21.
+ * Created by lianhao on 2016/12/21.
  */
 @Service
 public class PersonService {

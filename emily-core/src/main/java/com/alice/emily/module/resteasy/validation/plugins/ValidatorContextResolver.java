@@ -6,7 +6,11 @@ import org.apache.commons.lang3.concurrent.ConcurrentException;
 import org.apache.commons.lang3.concurrent.LazyInitializer;
 import org.jboss.resteasy.spi.validation.GeneralValidator;
 
-import javax.validation.*;
+import javax.validation.BootstrapConfiguration;
+import javax.validation.Configuration;
+import javax.validation.Validation;
+import javax.validation.ValidationException;
+import javax.validation.ValidatorFactory;
 import javax.validation.executable.ExecutableType;
 import javax.ws.rs.ext.ContextResolver;
 import javax.ws.rs.ext.Provider;

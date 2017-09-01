@@ -1,7 +1,7 @@
-package com.palmaplus.euphoria.module.security.jwt;
+package com.alice.emily.module.security.jwt;
 
-import com.palmaplus.euphoria.module.security.jwt.web.JWTAuthenticationRequest;
-import com.palmaplus.euphoria.module.security.jwt.web.JWTAuthenticationResponse;
+import com.alice.emily.module.security.jwt.web.JWTAuthenticationRequest;
+import com.alice.emily.module.security.jwt.web.JWTAuthenticationResponse;
 import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,7 +10,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
 /**
- * Created by liupin on 2017/4/7.
+ * Created by lianhao on 2017/4/7.
  */
 @ActiveProfiles("jwt")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)

@@ -1,10 +1,10 @@
-package com.palmaplus.euphoria.module.aop;
+package com.alice.emily.module.aop;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 /**
- * Created by liupin on 2017/4/8.
+ * Created by lianhao on 2017/4/8.
  */
 @SpringBootApplication
 public class AopTestApplication {

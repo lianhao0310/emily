@@ -10,12 +10,20 @@
       <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example.iml" filepath="$PROJECT_DIR$/emily-example/emily-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-admin/emily-example-admin.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-admin/emily-example-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-application/emily-example-application.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-application/emily-example-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-curator/emily-example-curator.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-curator/emily-example-curator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-docker/emily-example-docker.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-docker/emily-example-docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-elasticsearch/emily-example-elasticsearch.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-elasticsearch/emily-example-elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-grpc/emily-example-grpc.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-grpc/emily-example-grpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-jsw/emily-example-jsw.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-jsw/emily-example-jsw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-kafka/emily-example-kafka.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-kafka/emily-example-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-log4j2/emily-example-log4j2.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-log4j2/emily-example-log4j2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-okhttp/emily-example-okhttp.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-okhttp/emily-example-okhttp.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-example/emily-example-slf4j-log4j2/emily-example-slf4j-log4j2.iml" filepath="$PROJECT_DIR$/emily-example/emily-example-slf4j-log4j2/emily-example-slf4j-log4j2.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-parent/emily-parent.iml" filepath="$PROJECT_DIR$/emily-parent/emily-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-camel/emily-starter-camel.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-camel/emily-starter-camel.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-command/emily-starter-command.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-command/emily-starter-command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-curator/emily-starter-curator.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-curator/emily-starter-curator.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-geo/emily-starter-geo.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-geo/emily-starter-geo.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-grpc/emily-starter-grpc.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-grpc/emily-starter-grpc.iml" />
       <module fileurl="file://$PROJECT_DIR$/emily-starter/emily-starter-infinispan/emily-starter-infinispan.iml" filepath="$PROJECT_DIR$/emily-starter/emily-starter-infinispan/emily-starter-infinispan.iml" />

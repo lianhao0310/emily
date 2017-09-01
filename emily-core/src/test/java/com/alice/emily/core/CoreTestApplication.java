@@ -1,11 +1,11 @@
-package com.palmaplus.euphoria.core;
+package com.alice.emily.core;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 /**
- * Created by liupin on 2017/2/6.
+ * Created by lianhao on 2017/2/6.
  */
 @SpringBootApplication
 public class CoreTestApplication {

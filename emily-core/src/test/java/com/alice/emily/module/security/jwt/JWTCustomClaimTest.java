@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.security.jwt;
+package com.alice.emily.module.security.jwt;
 
 import com.google.common.collect.Lists;
 import org.assertj.core.api.Assertions;
@@ -15,7 +15,7 @@ import java.util.Date;
 import java.util.Map;
 
 /**
- * Created by liupin on 2017/4/7.
+ * Created by lianhao on 2017/4/7.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
         properties = "test.custom.claim=true")
@@ -23,9 +23,9 @@ public class JWTCustomClaimTest extends AbstractJsonWebTokenTest {
 
     @Test
     public void testCustomClaim() {
-        String token = getToken("euphoria", "password");
+        String token = getToken("emily", "password");
         String username = tokenService.getUsernameFromToken(token);
-        Assertions.assertThat(username).isEqualTo("euphoria");
+        Assertions.assertThat(username).isEqualTo("emily");
 
         Date createDate = tokenService.get(token, "createDate", Date.class);
         Assertions.assertThat(createDate).isNotNull().isBefore(new Date());

@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.security.jwt;
+package com.alice.emily.module.security.jwt;
 
 import com.google.common.collect.Lists;
 import org.junit.Assert;
@@ -12,7 +12,7 @@ import org.springframework.http.ResponseEntity;
 import java.util.Map;
 
 /**
- * Created by liupin on 2017/3/15.
+ * Created by lianhao on 2017/3/15.
  */
 public class JWTSimpleTest extends AbstractJsonWebTokenTest {
 
@@ -40,7 +40,7 @@ public class JWTSimpleTest extends AbstractJsonWebTokenTest {
     @Test
     public void testAccessProtectedController() {
         HttpHeaders headers = new HttpHeaders();
-        headers.set("Authorization", getToken("euphoria", "password"));
+        headers.set("Authorization", getToken("emily", "password"));
         HttpEntity<Void> httpEntity = new HttpEntity<>(headers);
         ResponseEntity<String> entity = template.exchange("/protected-controller", HttpMethod.GET, httpEntity, String.class);
         Assert.assertEquals(200, entity.getStatusCodeValue());
@@ -50,7 +50,7 @@ public class JWTSimpleTest extends AbstractJsonWebTokenTest {
     @Test
     public void testAccessProtectedResource() {
         HttpHeaders headers = new HttpHeaders();
-        headers.set("Authorization", getToken("euphoria", "password"));
+        headers.set("Authorization", getToken("emily", "password"));
         headers.setAccept(Lists.newArrayList(MediaType.APPLICATION_JSON));
         HttpEntity<Void> httpEntity = new HttpEntity<>(headers);
         ResponseEntity<String> entity = template.exchange("/protected-resource", HttpMethod.GET, httpEntity, String.class);

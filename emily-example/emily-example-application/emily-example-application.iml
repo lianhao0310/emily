@@ -16,6 +16,8 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: io.swagger:swagger-annotations:1.5.16" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger:swagger-models:1.5.16" level="project" />
     <orderEntry type="module" module-name="emily-core" />
     <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:1.5.4.RELEASE" level="project" />
@@ -43,6 +45,12 @@
     <orderEntry type="library" name="Maven: com.github.kevinsawicki:http-request:6.0" level="project" />
     <orderEntry type="library" name="Maven: one.util:streamex:0.6.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:1.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.testng:testng:6.9.9" level="project" />
+    <orderEntry type="library" name="Maven: com.beust:jcommander:1.48" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.ant:ant:1.7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.ant:ant-launcher:1.7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.17" level="project" />
+    <orderEntry type="library" name="Maven: org.beanshell:bsh:2.0b4" level="project" />
     <orderEntry type="module" module-name="emily-starter-resteasy" />
     <orderEntry type="module" module-name="emily-starter-web" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-undertow:1.5.4.RELEASE" level="project" />
@@ -72,8 +80,8 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.8.8" level="project" />
     <orderEntry type="module" module-name="emily-starter-swagger" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-swagger2:2.6.1" level="project" />
-    <orderEntry type="library" name="Maven: io.swagger:swagger-annotations:1.5.10" level="project" />
-    <orderEntry type="library" name="Maven: io.swagger:swagger-models:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger:swagger-annotations:1.5.16" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger:swagger-models:1.5.16" level="project" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-spi:2.6.1" level="project" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-core:2.6.1" level="project" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-schema:2.6.1" level="project" />
@@ -162,7 +170,6 @@
     <orderEntry type="library" name="Maven: io.dropwizard.metrics:metrics-jvm:3.1.4" level="project" />
     <orderEntry type="library" name="Maven: de.codecentric:spring-boot-admin-starter-client:1.4.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.5.4.RELEASE" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.yaml:snakeyaml:1.17" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:1.5.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-tomcat:1.5.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.15" level="project" />

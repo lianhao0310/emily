@@ -1,10 +1,10 @@
-package com.palmaplus.euphoria.module.security.keycloak;
+package com.alice.emily.module.security.keycloak;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Created by liupin on 2017/4/5.
+ * Created by lianhao on 2017/4/5.
  */
 @SpringBootApplication
 public class KeycloakTestApplication {

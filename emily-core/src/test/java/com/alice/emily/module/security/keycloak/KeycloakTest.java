@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.security.keycloak;
+package com.alice.emily.module.security.keycloak;
 
 import com.google.common.collect.Lists;
 import org.assertj.core.api.Assertions;
@@ -21,7 +21,7 @@ import org.springframework.util.MultiValueMap;
 import java.util.List;
 
 /**
- * Created by liupin on 2017/4/5.
+ * Created by lianhao on 2017/4/5.
  */
 @ActiveProfiles("keycloak")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)

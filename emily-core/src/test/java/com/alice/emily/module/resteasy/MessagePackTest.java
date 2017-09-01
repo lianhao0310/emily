@@ -1,7 +1,7 @@
-package com.palmaplus.euphoria.module.resteasy;
+package com.alice.emily.module.resteasy;
 
+import com.alice.emily.module.resteasy.resource.Person;
 import com.google.common.collect.Lists;
-import com.palmaplus.euphoria.module.resteasy.resource.Person;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
 /**
- * Created by liupin on 2017/3/27.
+ * Created by lianhao on 2017/3/27.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class MessagePackTest extends AbstractJUnit4SpringContextTests {

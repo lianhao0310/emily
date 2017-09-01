@@ -1,4 +1,4 @@
-package com.palmaplus.euphoria.module.grpc.scene;
+package com.alice.emily.module.grpc.scene;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
@@ -159,7 +159,8 @@ public class SceneRpcServiceGrpc {
       asyncUnimplementedUnaryCall(METHOD_GET_SCENES_BY_MAP_ID, responseObserver);
     }
 
-    @Override public io.grpc.ServerServiceDefinition bindService() {
+    @Override
+    public io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_GET_SCENE_BY_APP_KEY,

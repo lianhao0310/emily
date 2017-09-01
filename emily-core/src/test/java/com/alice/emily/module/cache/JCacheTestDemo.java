@@ -1,7 +1,7 @@
-package com.palmaplus.euphoria.module.cache;
+package com.alice.emily.module.cache;
 
 import com.google.common.util.concurrent.Uninterruptibles;
-import com.palmaplus.euphoria.module.aop.Audit;
+import com.alice.emily.module.aop.Audit;
 
 import javax.cache.annotation.CacheRemove;
 import javax.cache.annotation.CacheResult;

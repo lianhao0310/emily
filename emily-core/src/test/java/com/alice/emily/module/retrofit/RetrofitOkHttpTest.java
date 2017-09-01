@@ -1,7 +1,7 @@
-package com.palmaplus.euphoria.module.retrofit;
+package com.alice.emily.module.retrofit;
 
-import com.palmaplus.euphoria.module.okhttp.OkHttpEndpoint;
-import com.palmaplus.euphoria.utils.JSONUtils;
+import com.alice.emily.module.okhttp.OkHttpEndpoint;
+import com.alice.emily.utils.JSONUtils;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import okhttp3.OkHttpClient;
@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
- * Created by liupin on 2017/3/31.
+ * Created by lianhao on 2017/3/31.
  */
 @SpringBootTest
 public class RetrofitOkHttpTest extends AbstractJUnit4SpringContextTests {
@@ -51,7 +51,7 @@ public class RetrofitOkHttpTest extends AbstractJUnit4SpringContextTests {
         Call<HttpBinResponse> call = binService.postWithJson(new LoginData("username", "secret"));
         printResponse(call.execute());
 
-        call = binService.postWithFormParams("euphoria");
+        call = binService.postWithFormParams("emily");
         printResponse(call.execute());
 
         call = binService.get();

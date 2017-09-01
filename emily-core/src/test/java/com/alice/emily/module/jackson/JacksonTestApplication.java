@@ -1,9 +1,9 @@
-package com.palmaplus.euphoria.module.jackson;
+package com.alice.emily.module.jackson;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Created by liupin on 2017/4/10.
+ * Created by lianhao on 2017/4/10.
  */
 @SpringBootApplication
 public class JacksonTestApplication {

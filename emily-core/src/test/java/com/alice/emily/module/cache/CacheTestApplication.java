@@ -1,10 +1,10 @@
-package com.palmaplus.euphoria.module.cache;
+package com.alice.emily.module.cache;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 /**
- * Created by liupin on 2017/4/8.
+ * Created by lianhao on 2017/4/8.
  */
 @SpringBootApplication
 public class CacheTestApplication {
