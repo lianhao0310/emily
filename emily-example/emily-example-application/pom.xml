@@ -16,8 +16,8 @@
 
 	<properties>
 		<wrapper.daemon.id>${project.artifactId}</wrapper.daemon.id>
-		<wrapper.main.class>com.alice.emily.example.okhttp.EmilyExampleApplication</wrapper.main.class>
-		<uber.main.class>com.alice.emily.example.okhttp.EmilyExampleApplication</uber.main.class>
+		<wrapper.main.class>com.alice.emily.example.EmilyExampleApplication</wrapper.main.class>
+		<uber.main.class>com.alice.emily.example.EmilyExampleApplication</uber.main.class>
 	</properties>
 
 	<dependencies>

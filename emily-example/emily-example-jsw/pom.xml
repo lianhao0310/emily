@@ -18,7 +18,7 @@
 
 	<properties>
 		<wrapper.daemon.id>${project.artifactId}</wrapper.daemon.id>
-		<wrapper.main.class>com.alice.emily.example.okhttp.EmilyExampleJswApplication</wrapper.main.class>
+		<wrapper.main.class>com.alice.emily.example.EmilyExampleJswApplication</wrapper.main.class>
 		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
 	</properties>
 
