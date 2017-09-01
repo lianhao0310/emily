@@ -21,6 +21,7 @@
 		<module>emily-starter-camel</module>
 		<module>emily-starter-web</module>
 		<module>emily-starter-command</module>
+		<module>emily-starter-curator</module>
 		<module>emily-starter-geo</module>
 		<module>emily-starter-grpc</module>
 		<module>emily-starter-jpa</module>

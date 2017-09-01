@@ -9,7 +9,10 @@ import java.lang.reflect.Member;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
-import static java.lang.reflect.Modifier.*;
+import static java.lang.reflect.Modifier.ABSTRACT;
+import static java.lang.reflect.Modifier.FINAL;
+import static java.lang.reflect.Modifier.PRIVATE;
+import static java.lang.reflect.Modifier.STATIC;
 import static org.springframework.util.ReflectionUtils.USER_DECLARED_METHODS;
 
 public class AnnotationFilter implements ReflectionUtils.MethodFilter, ReflectionUtils.FieldFilter {

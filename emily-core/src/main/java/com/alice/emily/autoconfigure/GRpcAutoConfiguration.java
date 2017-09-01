@@ -1,6 +1,12 @@
 package com.alice.emily.autoconfigure;
 
-import com.alice.emily.module.grpc.*;
+
+import com.alice.emily.module.grpc.GRpcClientBeanPostProcessor;
+import com.alice.emily.module.grpc.GRpcClientFactory;
+import com.alice.emily.module.grpc.GRpcProperties;
+import com.alice.emily.module.grpc.GRpcServerBuilderConfigurer;
+import com.alice.emily.module.grpc.GRpcServerRunner;
+import com.alice.emily.module.grpc.GRpcService;
 import io.grpc.ServerBuilder;
 import io.grpc.stub.AbstractStub;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
@@ -15,7 +21,7 @@ import org.springframework.context.annotation.Configuration;
  * Created by alexf on 25-Jan-16.
  */
 @Configuration
-@ConditionalOnClass({ AbstractStub.class })
+@ConditionalOnClass({AbstractStub.class})
 @EnableConfigurationProperties(GRpcProperties.class)
 @AutoConfigureOrder
 public class GRpcAutoConfiguration {

@@ -10,7 +10,7 @@
 	<description>Emily example for Spring Boot log4j2</description>
 
 	<parent>
-		<groupId>com.alice.emily</groupId>
+		<groupId>com.alice.emily.example</groupId>
 		<artifactId>emily-example</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>

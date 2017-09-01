@@ -463,7 +463,71 @@
 				</plugins>
 			</build>
 		</profile>
+
+		<profile>
+			<id>docker-compose</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<file>
+					<exists>${basedir}/src/main/resources/META-INF/emily-docker-compose.marker</exists>
+				</file>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-dependency-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>copy-explicit-dependencies</id>
+								<phase>package</phase>
+								<goals>
+									<goal>copy-dependencies</goal>
+								</goals>
+								<configuration>
+									<excludeGroupIds>com.alice.emily,org.springframework.boot</excludeGroupIds>
+									<excludeScope>provided</excludeScope>
+									<excludeTransitive>true</excludeTransitive>
+									<overWriteIfNewer>true</overWriteIfNewer>
+									<overWriteReleases>true</overWriteReleases>
+									<overWriteSnapshots>true</overWriteSnapshots>
+									<outputDirectory>${project.basedir}/target/docker/dependencies</outputDirectory>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<version>${maven-assembly-plugin.version}</version>
+						<dependencies>
+							<dependency>
+								<groupId>com.alice.emily</groupId>
+								<artifactId>emily-assets</artifactId>
+								<version>${emily.version}</version>
+							</dependency>
+						</dependencies>
+						<executions>
+							<execution>
+								<phase>package</phase>
+								<goals>
+									<goal>single</goal>
+								</goals>
+								<configuration>
+									<attach>false</attach>
+									<finalName>${project.groupId}.${project.artifactId}-${maven.build.timestamp}</finalName>
+									<appendAssemblyId>false</appendAssemblyId>
+									<tarLongFileMode>posix</tarLongFileMode>
+									<descriptorRefs>
+										<descriptorRef>docker-compose-assembly</descriptorRef>
+									</descriptorRefs>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 	</profiles>
-
-
 </project>

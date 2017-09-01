@@ -1,12 +1,16 @@
 package com.alice.emily.module.mail;
 
-import com.google.common.base.Preconditions;
-import com.google.common.base.Strings;
-import com.google.common.collect.Lists;
 import com.alice.emily.module.template.TemplateRender;
 import com.alice.emily.utils.Errors;
 import com.alice.emily.utils.LOG;
-import jodd.mail.*;
+import com.google.common.base.Preconditions;
+import com.google.common.base.Strings;
+import com.google.common.collect.Lists;
+import jodd.mail.Email;
+import jodd.mail.MailAddress;
+import jodd.mail.SendMailSession;
+import jodd.mail.SmtpServer;
+import jodd.mail.SmtpSslServer;
 import org.springframework.retry.annotation.Backoff;
 import org.springframework.retry.annotation.Retryable;
 

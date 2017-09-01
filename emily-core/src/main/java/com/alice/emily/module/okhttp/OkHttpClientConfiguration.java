@@ -1,6 +1,11 @@
 package com.alice.emily.module.okhttp;
 
-import okhttp3.*;
+
+import okhttp3.Cache;
+import okhttp3.CookieJar;
+import okhttp3.Dns;
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
