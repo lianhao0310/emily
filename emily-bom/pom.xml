@@ -25,6 +25,7 @@
 		<beetl.version>2.7.13</beetl.version>
 		<bouncycastle.version>1.56</bouncycastle.version>
 		<camel.version>2.18.3</camel.version>
+		<commons-collections4.version>4.1</commons-collections4.version>
 		<commons-compress.version>1.12</commons-compress.version>
 		<commons-csv.version>1.4</commons-csv.version>
 		<commons-dbutils.version>1.6</commons-dbutils.version>
@@ -85,6 +86,7 @@
 		<streamex.version>0.6.5</streamex.version>
 		<sshj.version>0.20.0</sshj.version>
 		<swagger.version>1.5.16</swagger.version>
+		<tika.version>1.16</tika.version>
 
 		<!-- Maven plugins -->
 		<maven.assembly.plugin.version>2.6</maven.assembly.plugin.version>
@@ -323,6 +325,11 @@
 			</dependency>
 
 			<!-- apache commons -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-collections4</artifactId>
+				<version>${commons-collections4.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-compress</artifactId>
@@ -916,6 +923,11 @@
 				<groupId>io.swagger</groupId>
 				<artifactId>swagger-models</artifactId>
 				<version>${swagger.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.tika</groupId>
+				<artifactId>tika-core</artifactId>
+				<version>${tika.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

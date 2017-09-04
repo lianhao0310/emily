@@ -44,6 +44,8 @@ Audit done.
 * [OkHttp](http://square.github.io/okhttp/)
 * [Retrofit](http://square.github.io/retrofit/)
 * [HttpRequest](https://github.com/kevinsawicki/http-request)
+* HttpRequest
+    > com.alice.emily.utils.HTTP封装了对HttpRequest的引用
 
 ### WEB
 
@@ -245,6 +247,19 @@ spring.jackson.deserialization.accept-float-as-int=false
 spring.jackson.deserialization.fail-on-unknown-properties=false
 spring.jackson.serialization.indent_output=true
 spring.jackson.mapper.use-static-typing=false
+```
+
+* **HTTP**
+Emily提供HTTP工具类，提供流式操作：
+> com.alice.emily.utils.HTTP
+```bash
+ HttpRequest httpRequest = HTTP.post(RESOURCE_ADMIN)
+         .accept(MediaType.APPLICATION_JSON_UTF8_VALUE)
+         .header(HttpHeaders.AUTHORIZATION, getToken())
+         .form("greet", "I will be accepted");
+
+ assertThat(httpRequest.code()).isEqualTo(HttpResponseCodes.SC_OK);
+ assertThat(httpRequest.body()).isEqualTo("Greetings from constraint admin post resource method!");
 ```
 
 * **Security**
