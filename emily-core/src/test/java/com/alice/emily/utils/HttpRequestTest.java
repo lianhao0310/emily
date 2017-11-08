@@ -11,7 +11,7 @@ import static org.assertj.core.api.Java6Assertions.assertThat;
 public class HttpRequestTest {
 
     @Test
-    public void testGet(){
+    public void testGet() {
         HTTP.HttpRequest httpRequest = HTTP.get("http://127.0.0.1:8080/user/info", true, "phone", "17092613935");
 
         assertThat(httpRequest.code()).isEqualTo(HttpResponseCodes.SC_OK);
