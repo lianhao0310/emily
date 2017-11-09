@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>emily-parent</artifactId>
+        <groupId>com.alice.emily</groupId>
+        <version>2.0.0</version>
+        <relativePath>../emily-parent</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>emily-starter</artifactId>
+    <packaging>pom</packaging>
+    <name>Emily :: Starter</name>
+    <description>
+        The emily starter module provides starter pom for emily based library or application
+    </description>
+    <modules>
+        <module>emily-starter-web</module>
+        <module>emily-starter-command</module>
+        <module>emily-starter-curator</module>
+        <module>emily-starter-grpc</module>
+        <module>emily-starter-jdbc</module>
+        <module>emily-starter-jpa</module>
+        <module>emily-starter-narayana</module>
+        <module>emily-starter-resteasy</module>
+        <module>emily-starter-swagger</module>
+        <module>emily-starter-monitor</module>
+        <module>emily-starter-mongodb</module>
+        <module>emily-starter-mail</module>
+        <module>emily-starter-elasticsearch</module>
+        <module>emily-starter-test</module>
+        <module>emily-starter-freemarker</module>
+        <module>emily-starter-thymeleaf</module>
+        <module>emily-starter-beetl</module>
+        <module>emily-starter-oauth2</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.alice.emily</groupId>
+            <artifactId>emily-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alice.emily</groupId>
+            <artifactId>emily-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.basepom.maven</groupId>
+                <artifactId>duplicate-finder-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>duplicate-dependencies</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                        <configuration>
+                            <failBuildInCaseOfConflict>true</failBuildInCaseOfConflict>
+                            <ignoredResourcePatterns>
+                                <ignoredResourcePattern>changelog.txt</ignoredResourcePattern>
+                                <ignoredResourcePattern>.gitkeep</ignoredResourcePattern>
+                                <ignoredResourcePattern>log4j2.xml</ignoredResourcePattern>
+                                <ignoredResourcePattern>ValidationMessages.properties</ignoredResourcePattern>
+                                <ignoredResourcePattern>ExceptionMessages.properties</ignoredResourcePattern>
+                            </ignoredResourcePatterns>
+                            <ignoredDependencies>
+                                <dependency>
+                                    <groupId>aopalliance</groupId>
+                                    <artifactId>aopalliance</artifactId>
+                                </dependency>
+                                <dependency>
+                                    <groupId>net.minidev</groupId>
+                                    <artifactId>accessors-smart</artifactId>
+                                </dependency>
+                                <dependency>
+                                    <groupId>jline</groupId>
+                                    <artifactId>jline</artifactId>
+                                </dependency>
+                            </ignoredDependencies>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

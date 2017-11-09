@@ -1,0 +1,9 @@
+${AnsiColor.BRIGHT_GREEN}__________        .__                          ___________            .__                 .__
+${AnsiColor.BRIGHT_GREEN}\______   \_____  |  |   _____ _____  ______   \_   _____/__ ________ |  |__   ___________|__|____
+${AnsiColor.BRIGHT_GREEN} |     ___/\__  \ |  |  /     \\__  \ \____ \   |    __)_|  |  \____ \|  |  \ /  _ \_  __ \  \__  \
+${AnsiColor.BRIGHT_GREEN} |    |     / __ \|  |_|  Y Y  \/ __ \|  |_> >  |        \  |  /  |_> >   Y  (  <_> )  | \/  |/ __ \_
+${AnsiColor.BRIGHT_GREEN} |____|    (____  /____/__|_|  (____  /   __/  /_______  /____/|   __/|___|  /\____/|__|  |__(____  /
+${AnsiColor.BRIGHT_GREEN}                \/           \/     \/|__|             \/      |__|        \/                     \/
+${AnsiColor.DEFAULT}
+${AnsiColor.GREEN}                       ${application.title}: ${application.version}
+${AnsiColor.DEFAULT}

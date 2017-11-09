@@ -1,0 +1,20 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.alice.emily.autoconfigure.core.AopAutoConfiguration,\
+  com.alice.emily.autoconfigure.core.BeanResolverAutoConfiguration,\
+  com.alice.emily.autoconfigure.core.CacheExtAutoConfiguration,\
+  com.alice.emily.autoconfigure.core.ConversionServiceAutoConfiguration,\
+  com.alice.emily.autoconfigure.core.JacksonExtAutoConfiguration,\
+  com.alice.emily.autoconfigure.core.NiceFeatureAutoConfiguration,\
+  com.alice.emily.autoconfigure.core.SecurityExtAutoConfiguration,\
+  com.alice.emily.autoconfigure.core.WebServletAutoConfiguration,\
+  com.alice.emily.autoconfigure.data.ElasticsearchExtAutoConfiguration,\
+  com.alice.emily.autoconfigure.data.MongoExtAutoConfiguration,\
+  com.alice.emily.autoconfigure.resteasy.MultipartExtAutoConfiguration,\
+  com.alice.emily.autoconfigure.resteasy.ResteasyAutoConfiguration,\
+  com.alice.emily.autoconfigure.CommandAutoConfiguration,\
+  com.alice.emily.autoconfigure.CuratorAutoConfiguration,\
+  com.alice.emily.autoconfigure.GRpcAutoConfiguration,\
+  com.alice.emily.autoconfigure.SwaggerAutoConfiguration,\
+  com.alice.emily.autoconfigure.TemplateAutoConfiguration,\
+  com.alice.emily.autoconfigure.UndertowAutoConfiguration,\
+  com.alice.emily.autoconfigure.ZookeeperAutoConfiguration
