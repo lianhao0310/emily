@@ -114,7 +114,7 @@ Audit done.
     <parent>
         <artifactId>emily-parent</artifactId>
         <groupId>com.alice.emily</groupId>
-        <version>3.2</version>
+        <version>2.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
