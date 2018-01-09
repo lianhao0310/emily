@@ -126,6 +126,20 @@ Audit done.
         <wrapper.daemon.id>${project.artifactId}</wrapper.daemon.id>
         <wrapper.main.class>com.alice.test.EmilyApplication</wrapper.main.class>
     </properties>
+    
+    <!--Add repositories-->
+    <repositories>
+    	<repository>
+    		<id>haoch-maven-snapshot-repository</id>
+    		<name>haoch-maven-snapshot-repository</name>
+    		<url>https://raw.github.com/lianhao0310/maven/snapshot/</url>
+    	</repository>
+    	<repository>
+    		<id>haoch-maven-release-repository</id>
+    		<name>haoch-maven-release-repository</name>
+    		<url>https://raw.github.com/lianhao0310/maven/release/</url>
+    	</repository>
+    </repositories>
 
     <dependencies>
         <dependency>
