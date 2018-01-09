@@ -50,6 +50,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @ContextConfiguration(initializers = MongoRepositoryTest.Initializer.class)
 public class MongoRepositoryTest extends AbstractDataTest {
 
+
     @ClassRule
     public static GenericContainer mongo = new FixedHostPortGenericContainer("mongo:3.4.6")
             .withExposedPorts(27017)
