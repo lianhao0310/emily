@@ -3,20 +3,20 @@ package com.alice.emily.exception;
 /**
  * Created by liupin on 2016/12/10.
  */
-public class EuphoriaResourceException extends EuphoriaException {
+public class EmilyResourceException extends EmilyException {
 
-    public EuphoriaResourceException() {
+    public EmilyResourceException() {
     }
 
-    public EuphoriaResourceException(String message) {
+    public EmilyResourceException(String message) {
         super(message);
     }
 
-    public EuphoriaResourceException(Throwable cause) {
+    public EmilyResourceException(Throwable cause) {
         super(cause);
     }
 
-    public EuphoriaResourceException(String message, Throwable cause) {
+    public EmilyResourceException(String message, Throwable cause) {
         super(message, cause);
     }
 }

@@ -5,7 +5,7 @@
         "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
 
 <!--
-  Checkstyle gRpcProperties that checks the Euphoria coding conventions.
+  Checkstyle gRpcProperties that checks the Emily coding conventions.
 -->
 
 <module name="Checker">

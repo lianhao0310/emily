@@ -54,9 +54,9 @@ public class LOG {
 
     private static PatternLayout patternLayout() {
         Configuration configuration = context().getConfiguration();
-        String pattern = System.getProperty("EUPHORIA_LOG_PATTERN");
+        String pattern = System.getProperty("Emily_LOG_PATTERN");
         pattern = Strings.isNullOrEmpty(pattern)
-                ? "%d{yyyy-MM-dd HH:mm:ss.SSS} %7p ${sys:EUPHORIA_PID} --- [%20.20t]%-40.40c{1.} : %m%n" : pattern;
+                ? "%d{yyyy-MM-dd HH:mm:ss.SSS} %7p ${sys:Emily_PID} --- [%20.20t]%-40.40c{1.} : %m%n" : pattern;
         return PatternLayout.newBuilder()
                 .withPattern(pattern)
                 .withConfiguration(configuration)

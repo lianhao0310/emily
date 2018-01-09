@@ -3,7 +3,7 @@ package com.alice.emily.exception;
 /**
  * Created by lianhao on 2017/6/21.
  */
-public class UnsupportedClassTypeException extends EuphoriaException {
+public class UnsupportedClassTypeException extends EmilyException {
 
     public UnsupportedClassTypeException() {
         super();

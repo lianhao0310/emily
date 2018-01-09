@@ -3,19 +3,19 @@ package com.alice.emily.exception;
 /**
  * Created by wyx on 12/9/15.
  */
-public class EuphoriaException extends RuntimeException {
+public class EmilyException extends RuntimeException {
 
-    public EuphoriaException() { }
+    public EmilyException() { }
 
-    public EuphoriaException(String message) {
+    public EmilyException(String message) {
         super(message);
     }
 
-    public EuphoriaException(Throwable cause) {
+    public EmilyException(Throwable cause) {
         super(cause);
     }
 
-    public EuphoriaException(String message, Throwable cause) {
+    public EmilyException(String message, Throwable cause) {
         super(message, cause);
     }
 

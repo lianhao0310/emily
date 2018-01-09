@@ -132,7 +132,7 @@ public class CommandFeatureTest extends AbstractJUnit4SpringContextTests {
                 .append("test go 1 2 3").append("\n")
                 .append("quit").append("\n");
         ReaderInputStream inputStream = new ReaderInputStream(new StringReader(sb.toString()), StandardCharsets.UTF_8);
-        new CommandConsole("Euphoria Test", "Test") {
+        new CommandConsole("Emily Test", "Test") {
             @Override
             @SneakyThrows
             protected synchronized void initialize() {

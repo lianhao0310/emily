@@ -1,11 +1,11 @@
-# Euphoria
+# Emily
 
 ## 1. 编码规范
 
 > * [Google Java编码规范](https://segmentfault.com/a/1190000002761014)
 > * [阿里巴巴Java开发手册](https://yq.aliyun.com/attachment/download/?id=1170)
 
-Euphoria使用Checkstyle工具对编码风格进行检测, 不符合规范的代码会被终止构建过程:
+Emily使用Checkstyle工具对编码风格进行检测, 不符合规范的代码会被终止构建过程:
 
 ```java
     if (aClass.isAssignableFrom(eClass)) {
@@ -124,7 +124,7 @@ Audit done.
 
     <properties>
         <wrapper.daemon.id>${project.artifactId}</wrapper.daemon.id>
-        <wrapper.main.class>com.alice.test.EuphoriaApplication</wrapper.main.class>
+        <wrapper.main.class>com.alice.test.EmilyApplication</wrapper.main.class>
     </properties>
 
     <dependencies>
@@ -205,7 +205,7 @@ Audit done.
 
 * **Jackson**
 
-Euphoria提供JSON工具类，其使用Spring管理的ObjectMapper序列化和反序列化配置:
+Emily提供JSON工具类，其使用Spring管理的ObjectMapper序列化和反序列化配置:
 > **com.alice.emily.utils.JSON**
 
 ```properties
@@ -218,7 +218,7 @@ spring.jackson.mapper.use-static-typing=false
 
 * **Http**
 
-Euphoria提供HTTP工具类，提供流式操作：
+Emily提供HTTP工具类，提供流式操作：
 > **com.alice.emily.utils.HTTP**
 
 ```java
@@ -233,7 +233,7 @@ Euphoria提供HTTP工具类，提供流式操作：
 
 * **Web**
 
-Euphoria提供了对文件断点下载的支持：
+Emily提供了对文件断点下载的支持：
 > **com.alice.emily.web.multipart.MultipartFileSender**
 
 ```java
@@ -661,7 +661,7 @@ public interface MongoExtRepository<T, ID extends Serializable>
 ```
 
 * JMX
-> Euphoria默认打开Spring的JMX监控
+> Emily默认打开Spring的JMX监控
 
 * Spring Boot Actuator
 
@@ -791,12 +791,9 @@ docker save -o target\nagrand-ws.tar nagrand-ws:2.1-SNAPSHOT
 ## 6. 项目历史
 
 * emily 1.x
-    > * 基于[CDI](http://weld.cdi-spec.org/)，DeltaSpike构建，目前应用于Nagrand
-
-* emily 2.x
     > * 基于[SpringBoot](http://projects.spring.io/spring-boot/)构建，采用多项Jboss开源产品
 
-* emily 3.x
+* emily 2.x
     > * 采用Spring Boot推荐的架构重新组织项目结构
     > * 引入Elasticsearch，MongoDB，并增强Repository
     > * 非WEB环境下模板服务

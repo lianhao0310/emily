@@ -1,8 +1,8 @@
 package com.alice.emily.utils;
 
-import com.alice.emily.exception.EuphoriaException;
-import com.alice.emily.exception.EuphoriaResourceException;
-import com.alice.emily.exception.EuphoriaServiceException;
+import com.alice.emily.exception.EmilyException;
+import com.alice.emily.exception.EmilyResourceException;
+import com.alice.emily.exception.EmilyServiceException;
 import lombok.experimental.UtilityClass;
 import org.springframework.beans.BeanUtils;
 import org.springframework.util.ReflectionUtils;
@@ -29,7 +29,7 @@ public class Errors {
             if (t != null) e.initCause(t);
             return e;
         } catch (PrivilegedActionException ex) {
-            throw new EuphoriaException(ex.getCause());
+            throw new EmilyException(ex.getCause());
         }
     }
 
@@ -37,36 +37,36 @@ public class Errors {
         return newException(t, exceptionToThrow, String.format(format, params));
     }
 
-    public static EuphoriaException rethrow(Throwable t, String format, Object... params) {
-        throw newException(t, EuphoriaException.class, format, params);
+    public static EmilyException rethrow(Throwable t, String format, Object... params) {
+        throw newException(t, EmilyException.class, format, params);
     }
 
-    public static EuphoriaException rethrow(Throwable t) {
-        throw newException(t, EuphoriaException.class, null);
+    public static EmilyException rethrow(Throwable t) {
+        throw newException(t, EmilyException.class, null);
     }
 
-    public static EuphoriaException system(String format, Object... params) {
+    public static EmilyException system(String format, Object... params) {
         return system(null, format, params);
     }
 
-    public static EuphoriaException system(Throwable t, String format, Object... params) {
-        return newException(t, EuphoriaException.class, format, params);
+    public static EmilyException system(Throwable t, String format, Object... params) {
+        return newException(t, EmilyException.class, format, params);
     }
 
-    public static EuphoriaResourceException resource(String format, Object... params) {
+    public static EmilyResourceException resource(String format, Object... params) {
         return resource(null, format, params);
     }
 
-    public static EuphoriaResourceException resource(Throwable t, String format, Object... params) {
-        return newException(t, EuphoriaResourceException.class, format, params);
+    public static EmilyResourceException resource(Throwable t, String format, Object... params) {
+        return newException(t, EmilyResourceException.class, format, params);
     }
 
-    public static EuphoriaServiceException service(String format, Object... params) {
+    public static EmilyServiceException service(String format, Object... params) {
         return service(null, format, params);
     }
 
-    public static EuphoriaServiceException service(Throwable t, String format, Object... params) {
-        return newException(t, EuphoriaServiceException.class, format, params);
+    public static EmilyServiceException service(Throwable t, String format, Object... params) {
+        return newException(t, EmilyServiceException.class, format, params);
     }
 
     public static UnsupportedOperationException unsupported(String format, Object... params) {

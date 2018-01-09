@@ -1,6 +1,6 @@
 package com.alice.emily.zookeeper;
 
-import com.alice.emily.exception.EuphoriaException;
+import com.alice.emily.exception.EmilyException;
 
 /**
  * Runtime exception used to wrap native ZooKeeper checked exceptions thrown while
@@ -8,7 +8,7 @@ import com.alice.emily.exception.EuphoriaException;
  *
  */
 @SuppressWarnings("serial")
-public class ZooKeeperAccessException extends EuphoriaException {
+public class ZooKeeperAccessException extends EmilyException {
 
     public ZooKeeperAccessException(String message, Throwable cause) {
         super(message, cause);
